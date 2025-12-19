@@ -1,15 +1,13 @@
-# mPLUG-Owl3 Quality Assessment Toolkit
+# SeP-IQA: Harnessing MLLM Semantic Preferences for Training-Free Image Quality Assessment
 
 This repository contains a refactored and modularized toolkit for Multimodal Quality Assessment using mPLUG-Owl3 and other state-of-the-art Multimodal Large Language Models (MLLMs).
 
 ## Project Structure
 
-The project has been reorganized to separate the new modular codebase from the original scripts.
-
-*   **Root Directory**: Contains the new, modularized, and easy-to-use Python scripts.
 *   **`src/`**: Contains the original research scripts and legacy code.
 *   **`configs/`**: Configuration files for datasets (e.g., `iqa.yml`, `iaa.yml`).
-*   **`exps/`**: Output directory for experiment results.
+*   **`iic/`**: https://huggingface.co/mPLUG/mPLUG-Owl3-7B-241101/blob/main/model.safetensors
+
 
 ## Key Files (New Modular System)
 
@@ -22,6 +20,13 @@ The project has been reorganized to separate the new modular codebase from the o
 *   **`evaluation_utils.py`**: Utility functions for metrics and embeddings.
 
 ## Usage
+
+### 0. env prepare
+
+*  `pip install -r requirements.txt`  (note transformers==4.37.2)
+
+*  download [checkpoint](https://huggingface.co/mPLUG/mPLUG-Owl3-7B-241101/blob/main/model.safetensors) to iic/mPLUG-Owl3-7B-241101/
+
 
 ### 1. Evaluating mPLUG-Owl3 (`main.py`)
 
@@ -82,19 +87,6 @@ Use `evaluate_others.py` to run evaluations with other supported MLLMs.
     ```bash
     python evaluate_others.py --model_type llava_video --task IQA --config configs/iqa.yml
     ```
-
-## Requirements
-
-*   Python 3.8+
-*   PyTorch
-*   Transformers
-*   Pillow
-*   Decord
-*   FFmpeg
-*   Scipy
-*   Pandas
-
-(See `requirements.txt` for details)
 
 ## Original Code
 
