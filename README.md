@@ -6,7 +6,7 @@ This repository contains a refactored and modularized toolkit for Multimodal Qua
 
 *   **`src/`**: Contains the original research scripts and legacy code.
 *   **`configs/`**: Configuration files for datasets (e.g., `iqa.yml`, `iaa.yml`).
-*   **`iic/`**: https://huggingface.co/mPLUG/mPLUG-Owl3-7B-241101/blob/main/model.safetensors
+*  **`examplar_data_labels/`**: labels of datasets.
 
 
 ## Key Files (New Modular System)
@@ -63,7 +63,7 @@ Use `main.py` to run evaluations with mPLUG-Owl3.
 
 ### 2. Evaluating Other Models (`evaluate_others.py`)
 
-Use `evaluate_others.py` to run evaluations with other supported MLLMs.
+Use `evaluate_others.py` to run evaluations with other supported MLLMs. These models require further development of appropriate prompts, and their performance needs improvement.
 
 **Arguments:**
 *   `--model_type`: Model to evaluate. Choices: `internvl3`, `qwen2vl`, `qwen25vl`, `llava_video`, `llava_next`.
