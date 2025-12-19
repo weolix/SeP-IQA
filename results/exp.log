@@ -1,0 +1,3146 @@
+ippl@ippl718:~/xxr/mPLUGOwl/mPLUGOwl3$ /root/anaconda3/bin/python /home/ippl/xxr/mPLUGOwl/mPLUGOwl3/owl3_zeroshot.py
+device:  cuda:1
+use flash_attn rotary
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to(cuda)`.
+Special tokens have been added in the vocabulary make sure the associated word embeddings are finetuned or trained.
+Validation: 100%|███████████████████████████████████████████████| 2010/2010 [10:28<00:00  3.20it/s]
+********koniq10k results:*********
+srcc:    0.882981007627027
+plcc:    0.9172065854072571
+qbench_srcc:     0.803435341921641
+qbench_plcc:     0.6934641003608704
+qalign_srcc:     0.8931023987251906
+qalign_plcc:     0.800413966178894
+Validation: 100%|███████████████████████████████████████████████| 2224/2224 [21:38<00:00  1.71it/s]
+********spaq results:*********
+srcc:    0.912562839585134
+plcc:    0.9122791290283203
+qbench_srcc:     0.8879005524878457
+qbench_plcc:     0.768277645111084
+qalign_srcc:     0.9187651151269501
+qalign_plcc:     0.8812404870986938
+Validation: 100%|███████████████████████████████████████████████| 2125/2125 [10:16<00:00  3.44it/s]
+********kadid results:*********
+srcc:    0.7795610430621069
+plcc:    0.7783066034317017
+qbench_srcc:     0.7178557165145422
+qbench_plcc:     0.5800267457962036
+qalign_srcc:     0.7506398844055759
+qalign_plcc:     0.5507996678352356
+Validation: 100%|███████████████████████████████████████████████| 1169/1169 [04:25<00:00  4.40it/s]
+********livec results:*********
+srcc:    0.857728783421632
+plcc:    0.8794710636138916
+qbench_srcc:     0.7912179528241731
+qbench_plcc:     0.6300971508026123
+qalign_srcc:     0.8539176828783926
+qalign_plcc:     0.8078786134719849
+Validation: 100%|███████████████████████████████████████████████| 2982/2982 [11:29<00:00  4.32it/s]
+********agiqa3k results:*********
+srcc:    0.772246751077667
+plcc:    0.8177655935287476
+qbench_srcc:     0.7207349678268885
+qbench_plcc:     0.723256528377533
+qalign_srcc:     0.7496603342190876
+qalign_plcc:     0.7917344570159912
+Validation: 100%|█████████████████████████████████████████████████| 982/982 [04:53<00:00  3.35it/s]
+********live results:*********
+srcc:    0.8844043471169679
+plcc:    0.889716386795044
+qbench_srcc:     0.8389680323588393
+qbench_plcc:     0.6631947755813599
+qalign_srcc:     0.8754051145651309
+qalign_plcc:     0.6782838106155396
+Validation: 100%|█████████████████████████████████████████████████| 716/716 [02:43<00:00  4.39it/s]
+********csiq results:*********
+srcc:    0.8169823808372152
+plcc:    0.8390164375305176
+qbench_srcc:     0.8254818925591189
+qbench_plcc:     0.7167357206344604
+qalign_srcc:     0.7758846308941956
+qalign_plcc:     0.7198599576950073
+
+
+=================================== LLaVANeXT =====================================
+
+Evaluating on dataset: koniq10k (Size: 2010)
+LLaVANeXT Validation: 100%|████████████████████████████████████| 2010/2010 [24:56<00:00  1.34it/s]
+Results for koniq10k:
+  SRCC (Topk): 0.4402
+  PLCC (Topk): 0.4748
+  SRCC (QBench): 0.5799
+  PLCC (QBench): 0.4874
+
+Evaluating on dataset: spaq (Size: 2224)
+LLaVANeXT Validation: 100%|████████████████████████████████████| 2224/2224 [40:52<00:00  1.10s/it]
+Results for spaq:
+  SRCC (Topk): 0.6815
+  PLCC (Topk): 0.6813
+  SRCC (QBench): 0.6762
+  PLCC (QBench): 0.5849
+
+Evaluating on dataset: kadid (Size: 2125)
+LLaVANeXT Validation: 100%|████████████████████████████████████| 2125/2125 [25:32<00:00  1.39it/s]
+Results for kadid:
+  SRCC (Topk): 0.5458
+  PLCC (Topk): 0.5568
+  SRCC (QBench): 0.6395
+  PLCC (QBench): 0.3772
+
+Evaluating on dataset: livec (Size: 1169)
+LLaVANeXT Validation: 100%|████████████████████████████████████| 1169/1169 [17:48<00:00  1.09it/s]
+Results for livec:
+  SRCC (Topk): 0.5923
+  PLCC (Topk): 0.6219
+  SRCC (QBench): 0.6164
+  PLCC (QBench): 0.5688
+
+Evaluating on dataset: agiqa3k (Size: 2982)
+LLaVANeXT Validation: 100%|████████████████████████████████████| 2982/2982 [45:45<00:00  1.09it/s]
+Results for agiqa3k:
+  SRCC (Topk): 0.7600
+  PLCC (Topk): 0.8356
+  SRCC (QBench): 0.7368
+  PLCC (QBench): 0.7486
+
+Evaluating on dataset: live (Size: 982)
+LLaVANeXT Validation: 100%|██████████████████████████████████████| 982/982 [11:56<00:00  1.37it/s]
+Results for live:
+  SRCC (Topk): 0.6064
+  PLCC (Topk): 0.6872
+  SRCC (QBench): 0.6107
+  PLCC (QBench): 0.6387
+
+Evaluating on dataset: csiq (Size: 716)
+LLaVANeXT Validation: 100%|██████████████████████████████████████| 716/716 [10:58<00:00  1.09it/s]
+Results for csiq:
+  SRCC (Topk): 0.5433
+  PLCC (Topk): 0.6429
+  SRCC (QBench): 0.6887
+  PLCC (QBench): 0.6598
+
+Evaluation finished.
+
+
+
+
+
+
+Evaluating on dataset: koniq10k (Size: 2010)
+Qwen2VL Validation: 100%|██████████████████████████████████████| 2010/2010 [22:31<00:00  1.49it/s]
+******** Results for koniq10k: *********
+  srcc_topk:     0.8558
+  plcc_topk:     0.8213313817977905
+  srcc_qbench:   0.7939
+  plcc_qbench:   0.7954119443893433
+
+Evaluating on dataset: spaq (Size: 2224)
+Qwen2VL Validation: 100%|██████████████████████████████████████| 2224/2224 [43:33<00:00  1.17s/it]
+******** Results for spaq: *********
+  srcc_topk:     0.7259
+  plcc_topk:     0.7731708288192749
+  srcc_qbench:   0.8736
+  plcc_qbench:   0.8567134141921997
+
+Evaluating on dataset: kadid (Size: 2125)
+Qwen2VL Validation: 100%|██████████████████████████████████████| 2125/2125 [06:16<00:00  5.65it/s]
+******** Results for kadid: *********
+  srcc_topk:     0.7319
+  plcc_topk:     0.7370830178260803
+  srcc_qbench:   0.7281
+  plcc_qbench:   0.639558732509613
+
+Evaluating on dataset: livec (Size: 1169)
+Qwen2VL Validation: 100%|██████████████████████████████████████| 1169/1169 [04:31<00:00  4.30it/s]
+******** Results for livec: *********
+  srcc_topk:     0.8363
+  plcc_topk:     0.783718466758728
+  srcc_qbench:   0.8304
+  plcc_qbench:   0.8142759799957275
+
+Evaluating on dataset: agiqa3k (Size: 2982)
+Qwen2VL Validation: 100%|██████████████████████████████████████| 2982/2982 [11:31<00:00  4.31it/s]
+******** Results for agiqa3k: *********
+  srcc_topk:     0.7318
+  plcc_topk:     0.702857494354248
+  srcc_qbench:   0.6770
+  plcc_qbench:   0.7892524600028992
+
+Evaluating on dataset: live (Size: 982)
+Qwen2VL Validation: 100%|████████████████████████████████████████| 982/982 [04:51<00:00  3.36it/s]
+******** Results for live: *********
+  srcc_topk:     0.7267
+  plcc_topk:     0.7083408832550049
+  srcc_qbench:   0.7941
+  plcc_qbench:   0.7644813060760498
+
+Evaluating on dataset: csiq (Size: 716)
+Qwen2VL Validation: 100%|████████████████████████████████████████| 716/716 [02:47<00:00  4.29it/s]
+******** Results for csiq: *********
+  srcc_topk:     0.6887
+  plcc_topk:     0.6335134506225586
+  srcc_qbench:   0.7318
+  plcc_qbench:   0.7273327112197876
+
+
+InternVL3 Model loaded.
+Model is on device: cuda:0
+val_embed_for_scoring computed. Shape: torch.Size([3584]) Device: cuda:0
+QBench good token ID: 18536 poor token ID: 5368
+QAlign token IDs: bad: 13855 poor: 5368 fair: 40900 good: 18536 excellent: 327
+
+Evaluating on dataset: koniq10k (Size: 2010)
+InternVL3 Validation: 100%|█████████████████████████████████████| 2010/2010 [44:50<00:00  1.34s/it]
+******** Results for koniq10k: *********
+  srcc_topk:     0.7043
+  plcc_topk:     0.7588300108909607
+  srcc_qbench:   0.7007
+  plcc_qbench:   0.6724991798400879
+  srcc_qalign:   0.7318
+  plcc_qalign:   0.7797769904136658
+Validation: 100%|█████████████████████████████████████| 2224/2224 [56:48<00:00  1.53s/it]
+******** Results for spaq: *********
+  srcc_topk:     0.7816
+  plcc_topk:     0.8085309863090515
+  srcc_qbench:   0.8650
+  plcc_qbench:   0.8119697570800781
+  srcc_qalign:   0.8653
+  plcc_qalign:   0.8478254079818726
+
+ dataset: koniq10k
+
+                         100: srcc: 0.8575570094081411 plcc: 0.8967405557632446
+                         200: srcc: 0.8250865214214989 plcc: 0.8840931057929993
+                         300: srcc: 0.8138899720295397 plcc: 0.8743021488189697
+                      
+                         100: srcc: 0.6509269887889237 plcc: 0.734957218170166
+                         200: srcc: 0.44474250417744093 plcc: 0.5200822353363037
+                         300: srcc: 0.2987571883446605 plcc: 0.3579767942428589
+                      
+                         100: srcc: 0.8861818737858762 plcc: 0.9165042638778687
+                         200: srcc: 0.8781646090085317 plcc: 0.9129014015197754
+                         300: srcc: 0.8820270557383029 plcc: 0.9166929125785828
+ dataset: spaq
+
+                         100: srcc: 0.8652227685548173 plcc: 0.8916937112808228
+                         200: srcc: 0.8467692046054257 plcc: 0.8837072849273682
+                         300: srcc: 0.8442895245599552 plcc: 0.8784936666488647
+                     
+                         100: srcc: 0.8609281852196652 plcc: 0.8623882532119751
+                         200: srcc: 0.7842839373271986 plcc: 0.7872432470321655
+                         300: srcc: 0.7153532460250236 plcc: 0.7355822324752808
+                     
+                         100: srcc: 0.9065100859501206 plcc: 0.9105095267295837
+                         200: srcc: 0.912079798209692 plcc: 0.9095333814620972
+                         300: srcc: 0.912385904791431 plcc: 0.9122961759567261
+ dataset: kadid
+  embed_results: 
+  embed_0: 
+                        100: srcc: 0.7389192162066499 plcc: 0.7395482063293457
+                        200: srcc: 0.7018145113983529 plcc: 0.7037039995193481
+                        300: srcc: 0.6747113972351767 plcc: 0.6764616966247559
+                    
+                        100: srcc: 0.6205682937924174 plcc: 0.6417295336723328
+                        200: srcc: 0.4270673941293428 plcc: 0.4586324989795685
+                        300: srcc: 0.35529355647083605 plcc: 0.3885272145271301
+                    
+                        100: srcc: 0.7909520867812414 plcc: 0.7871086597442627
+                        200: srcc: 0.7819693385443758 plcc: 0.7803570628166199
+                        300: srcc: 0.7800234222001123 plcc: 0.7786363363265991
+ dataset: livec
+  embed_results: 
+  embed_0: 
+                        100: srcc: 0.8332063430958823 plcc: 0.8357697129249573
+                        200: srcc: 0.8154074270201688 plcc: 0.7894744277000427
+                        300: srcc: 0.7913545856442559 plcc: 0.7487508058547974
+                   
+                        100: srcc: 0.576770439827634 plcc:  0.6809922456741333
+                        200: srcc: 0.46641345088247005 plcc:0.5811241865158081
+                        300: srcc: 0.3864934963966157 plcc: 0.5114634037017822
+                   
+                        100: srcc: 0.8558933191564585 plcc: 0.8822342157363892
+                        200: srcc: 0.8535023236193753 plcc: 0.8760774731636047
+                        300: srcc: 0.8574086762303234 plcc: 0.8795714378356934
+ dataset: agiqa3k
+ 
+                        100: srcc: 0.7403077546122436 plcc: 0.7232087850570679
+                        200: srcc: 0.7120128574368270 plcc: 0.6558807492256165
+                        300: srcc: 0.6639341170295593 plcc: 0.609950065612793
+
+                        100: srcc: 0.6410515932153754 plcc: 0.7941259741783142
+                        200: srcc: 0.5873945592257672 plcc: 0.733809769153595
+                        300: srcc: 0.554542248994943 plcc:  0.6959317326545715
+
+                        100: srcc: 0.7698118029739439 plcc: 0.8269169926643372
+                        200: srcc: 0.7734410119114208 plcc: 0.8169121742248535
+                        300: srcc: 0.7721891305375858 plcc: 0.8182511329650879
+ dataset: live
+ 
+                        100: srcc: 0.8566165121308639 plcc: 0.85875403881073
+                        200: srcc: 0.8251577793613232 plcc: 0.8205442428588867
+                        300: srcc: 0.8096733017880304 plcc: 0.7976018190383911
+                     
+                        100: srcc: 0.6448853618832947 plcc: 0.7305909395217896
+                        200: srcc: 0.5160082701259489 plcc: 0.6001958847045898
+                        300: srcc: 0.4535631697046067 plcc: 0.5495705604553223
+                     
+                        100: srcc: 0.8896099637629047 plcc: 0.8909383416175842
+                        200: srcc: 0.8796927274223288 plcc: 0.8884568214416504
+                        300: srcc: 0.8821885071081668 plcc: 0.8884515166282654
+ dataset: csiq
+ 
+                        100: srcc: 0.7696968733047607 plcc: 0.7749979496002197
+                        200: srcc: 0.692660647710263  plcc: 0.6690040826797485
+                        300: srcc: 0.6041481653127201 plcc: 0.5759314298629761
+                    
+                        100: srcc: 0.7402969186258412 plcc: 0.794687032699585
+                        200: srcc: 0.6825648645502697 plcc: 0.7399600744247437
+                        300: srcc: 0.6257978653976983 plcc: 0.6953144073486328
+                    
+                        100: srcc: 0.8424171184158632 plcc: 0.865767240524292
+                        200: srcc: 0.8272445601912451 plcc: 0.8459184169769287
+                        300: srcc: 0.8178745093178991 plcc: 0.8392814993858337
+
+
+ Sharp Clear Detailed High-resolution Crisp Vibrant Smooth Clean Well-defined Accurate Realistic Professional-grade Flawless Stunning Vivid High-definition (HD) Ultra-sharp Noise-free Balanced True-to-life Refined Pristine Exquisite Lifelike Rich Polished High-fidelity Superb Optimal Masterful
+ Blurry Pixelated Grainy Low-resolution Fuzzy Noisy Distorted Compressed Muddy Unsharp Out-of-focus Artifact-ridden Faded Overexposed Underexposed Low-quality Blocky Washed-out Smudged Jagged Unrefined Patchy Dull Hazy Low-fidelity Subpar Degraded Unnatural Poorly rendered Unprofessional
+
+KONIQ
+ embed_0:
+  K=100: SRCC=0.8910, PLCC=0.9170
+  K=200: SRCC=0.8700, PLCC=0.9099
+  K=300: SRCC=0.8640, PLCC=0.9095
+
+embed_1:
+  K=100: SRCC=0.8885, PLCC=0.9165
+  K=200: SRCC=0.8717, PLCC=0.9101
+  K=300: SRCC=0.8678, PLCC=0.9108
+
+SPAQ
+embed_0:
+  K=100: SRCC=0.9006, PLCC=0.9049
+  K=200: SRCC=0.8923, PLCC=0.9033
+  K=300: SRCC=0.8995, PLCC=0.9053
+
+embed_1:
+  K=100: SRCC=0.8959, PLCC=0.9045
+  K=200: SRCC=0.8886, PLCC=0.9020
+  K=300: SRCC=0.8993, PLCC=0.9047
+
+kadid
+embed_0:
+  K=100: SRCC=0.7876, PLCC=0.7873
+  K=200: SRCC=0.7705, PLCC=0.7666
+  K=300: SRCC=0.7598, PLCC=0.7558
+
+embed_1:
+  K=100: SRCC=0.7835, PLCC=0.7835
+  K=200: SRCC=0.7677, PLCC=0.7673
+  K=300: SRCC=0.7575, PLCC=0.7571
+
+livec Results Summary:
+
+embed_0:
+  K=100: SRCC=0.8616, PLCC=0.8841
+  K=200: SRCC=0.8587, PLCC=0.8800
+  K=300: SRCC=0.8552, PLCC=0.8810
+
+embed_1:
+  K=100: SRCC=0.8577, PLCC=0.8794
+  K=200: SRCC=0.8553, PLCC=0.8748
+  K=300: SRCC=0.8531, PLCC=0.8744
+
+agiqa3k Results Summary:
+
+embed_0:
+  K=100: SRCC=0.7693, PLCC=0.8223
+  K=200: SRCC=0.7689, PLCC=0.8174
+  K=300: SRCC=0.7621, PLCC=0.8174
+
+embed_1:
+  K=100: SRCC=0.7687, PLCC=0.8134
+  K=200: SRCC=0.7702, PLCC=0.8073
+  K=300: SRCC=0.7637, PLCC=0.8076
+
+  live Results Summary:
+
+embed_0:
+  K=100: SRCC=-0.8887, PLCC=-0.8911
+  K=200: SRCC=-0.8705, PLCC=-0.8731
+  K=300: SRCC=-0.8767, PLCC=-0.8789
+
+embed_1:
+  K=100: SRCC=-0.8866, PLCC=-0.8919
+  K=200: SRCC=-0.8733, PLCC=-0.8803
+  K=300: SRCC=-0.8770, PLCC=-0.8828
+
+  csiq Results Summary:
+
+embed_0:
+  K=100: SRCC=-0.8344, PLCC=-0.8529
+  K=200: SRCC=-0.8245, PLCC=-0.8402
+  K=300: SRCC=-0.8137, PLCC=-0.8331
+
+embed_1:
+  K=100: SRCC=-0.8333, PLCC=-0.8504
+  K=200: SRCC=-0.8233, PLCC=-0.8366
+  K=300: SRCC=-0.8084, PLCC=-0.8254
+
+
+
+koniq10k 
+original       : SRCC=0.8841, PLCC=0.9176
+simple         : SRCC=0.8922, PLCC=0.8665
+detailed       : SRCC=0.8861, PLCC=0.9068
+technical      : SRCC=0.8981, PLCC=0.8699
+comparative    : SRCC=0.8881, PLCC=0.8649
+professional   : SRCC=0.8663, PLCC=0.8666
+
+spaq 
+original       : SRCC=0.9149, PLCC=0.9120
+simple         : SRCC=0.7559, PLCC=0.7997
+detailed       : SRCC=0.8993, PLCC=0.8960
+technical      : SRCC=0.8483, PLCC=0.8449
+comparative    : SRCC=0.6333, PLCC=0.7437
+professional   : SRCC=0.7906, PLCC=0.8331
+
+kadid 
+original       : SRCC=0.7748, PLCC=0.7601
+simple         : SRCC=0.7331, PLCC=0.7385
+detailed       : SRCC=0.7999, PLCC=0.7889
+technical      : SRCC=0.7801, PLCC=0.7775
+comparative    : SRCC=0.7557, PLCC=0.7610
+professional   : SRCC=0.7458, PLCC=0.7390
+
+livec 
+original       : SRCC=0.8536, PLCC=0.8845
+simple         : SRCC=0.7979, PLCC=0.7471
+detailed       : SRCC=0.8767, PLCC=0.8729
+technical      : SRCC=0.8631, PLCC=0.8232
+comparative    : SRCC=0.8238, PLCC=0.7661
+professional   : SRCC=0.8437, PLCC=0.8051
+
+agiqa3k 
+original       : SRCC=0.7763, PLCC=0.8343
+simple         : SRCC=0.6327, PLCC=0.5883
+detailed       : SRCC=0.7971, PLCC=0.8354
+technical      : SRCC=0.7719, PLCC=0.7846
+comparative    : SRCC=0.7012, PLCC=0.6744
+professional   : SRCC=0.6256, PLCC=0.5802
+
+========== Evaluating Prompt 1/6: original ==========
+User content: Taking into account the details of the image, how would you rate the quality of this image?
+Assistant content: The quality of the image is very
+Evaluating original: 100%|████████████████████████████████████████| 982/982 [05:14<00:00,  3.12it/s]
+original: SRCC=-0.8518, PLCC=-0.8628
+
+========== Evaluating Prompt 2/6: simple ==========
+User content: How is the quality of this image?
+Assistant content: The image quality is
+Evaluating simple: 100%|██████████████████████████████████████████| 982/982 [05:16<00:00,  3.10it/s]
+simple: SRCC=-0.8337, PLCC=-0.8420
+
+========== Evaluating Prompt 3/6: detailed ==========
+User content: Please evaluate the visual quality of this image considering factors such as sharpness, clarity, color accuracy, composition, and overall aesthetic appeal.
+Assistant content: Based on my analysis, the image quality is
+Evaluating detailed: 100%|████████████████████████████████████████| 982/982 [23:33<00:00,  1.44s/it]
+detailed: SRCC=-0.8530, PLCC=-0.8756
+
+========== Evaluating Prompt 4/6: technical ==========
+User content: Assess the technical quality of this image including resolution, noise levels, compression artifacts, and visual distortions.
+Assistant content: The technical quality is
+Evaluating technical: 100%|███████████████████████████████████████| 982/982 [23:55<00:00,  1.46s/it]
+technical: SRCC=-0.8691, PLCC=-0.8729
+
+========== Evaluating Prompt 5/6: comparative ==========
+User content: On a scale from poor to excellent, how would you rate this image's quality?
+Assistant content: I would rate this image as
+Evaluating comparative: 100%|█████████████████████████████████████| 982/982 [05:40<00:00,  2.88it/s]
+comparative: SRCC=-0.8704, PLCC=-0.8838
+
+
+Dataset: live-vqc
+          embed_0:
+            Best K for SRCC: 200 (SRCC=0.6824)
+            Best K for PLCC: 200 (PLCC=0.7674)
+          embed_1:
+            Best K for SRCC: 200 (SRCC=0.6841)
+            Best K for PLCC: 200 (PLCC=0.7706)
+
+Dataset: maxwell
+          embed_0:
+            Best K for SRCC: 200 (SRCC=0.7017)
+            Best K for PLCC: 200 (PLCC=0.7225)
+          embed_1:
+            Best K for SRCC: 200 (SRCC=0.7028)
+            Best K for PLCC: 300 (PLCC=0.7230)
+
+Dataset: konvid1k
+          embed_0:
+            Best K for SRCC: 200 (SRCC=0.7875)
+            Best K for PLCC: 200 (PLCC=0.8028)
+          embed_1:
+            Best K for SRCC: 200 (SRCC=0.7907)
+            Best K for PLCC: 200 (PLCC=0.8063)
+
+
+
+********lsvq-1080p results:*********
+srcc:    0.6505033933714454
+plcc:    0.7188056707382202
+qbench_srcc:     0.657809929343604
+qbench_plcc:     0.35787516832351685
+qalign_srcc:     0.6390821582463277
+qalign_plcc:     0.4997914135456085
+
+********lsvq-test results:*********
+srcc:    0.730209057685929
+plcc:    0.7319355010986328
+qbench_srcc:     0.5213179062635042
+qbench_plcc:     0.3027392029762268
+qalign_srcc:     0.671705933183736
+qalign_plcc:     0.4315522313117981
+
+********maxwell results:*********
+srcc:    0.6903538062667289
+plcc:    0.7142603993415833
+qbench_srcc:     0.637810636159048
+qbench_plcc:     0.3804394006729126
+qalign_srcc:     0.6798911413192922
+qalign_plcc:     0.5386361479759216
+
+********live-vqc results:*********
+srcc:    0.6585029726893973
+plcc:    0.7585174441337585
+qbench_srcc:     0.7088284324586046
+qbench_plcc:     0.5239362716674805
+qalign_srcc:     0.6522968409998797
+qalign_plcc:     0.6528301239013672
+
+********konvid1k results:*********
+srcc:    0.779574821855694
+plcc:    0.7984641790390015
+qbench_srcc:     0.7445380082265892
+qbench_plcc:     0.5232107639312744
+qalign_srcc:     0.7652469989370808
+qalign_plcc:     0.665496289730072
+
+
+/root/anaconda3/bin/python /home/ippl/xxr/mPLUG-Owl/mPLUG-Owl3/owl3_zeroshot.py
+device:  cuda:1
+use flash_attn rotary
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+共找到23张图片
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=22.1250  id=1661  word='good'
+   2: logit=19.7500  id=7852  word='poor'
+   3: logit=16.3750  id=1550  word='high'
+   4: logit=16.0000  id=2797  word='clear'
+   5: logit=15.3750  id=3873  word='bad'
+   6: logit=15.2500  id=3347  word='low'
+   7: logit=14.3125  id=13382  word='accurate'
+   8: logit=13.2500  id=9073  word='excellent'
+   9: logit=12.3125  id=17232  word='sharp'
+  10: logit=12.1875  id=99055  word='blurry'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=24.1250  id=7852  word='poor'
+   2: logit=19.7500  id=3347  word='low'
+   3: logit=18.8750  id=1661  word='good'
+   4: logit=18.0000  id=3873  word='bad'
+   5: logit=16.0000  id=99055  word='blurry'
+   6: logit=15.3125  id=1550  word='high'
+   7: logit=14.3125  id=6975  word='uns'
+   8: logit=14.2500  id=11  word=','
+   9: logit=14.1875  id=2797  word='clear'
+  10: logit=14.0625  id=1602  word='very'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=22.3750  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=17.5000  id=1550  word='high'
+   4: logit=17.3750  id=2797  word='clear'
+   5: logit=16.8750  id=3347  word='low'
+   6: logit=16.5000  id=3873  word='bad'
+   7: logit=15.0000  id=13382  word='accurate'
+   8: logit=13.5625  id=99055  word='blurry'
+   9: logit=13.4375  id=9073  word='excellent'
+  10: logit=13.0000  id=17232  word='sharp'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=22.7500  id=1661  word='good'
+   2: logit=20.6250  id=7852  word='poor'
+   3: logit=17.3750  id=2797  word='clear'
+   4: logit=17.1250  id=1550  word='high'
+   5: logit=16.1250  id=3347  word='low'
+   6: logit=15.8750  id=3873  word='bad'
+   7: logit=14.5625  id=13382  word='accurate'
+   8: logit=14.5625  id=9073  word='excellent'
+   9: logit=13.8750  id=17232  word='sharp'
+  10: logit=13.7500  id=99055  word='blurry'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=21.8750  id=1661  word='good'
+   2: logit=21.3750  id=7852  word='poor'
+   3: logit=17.5000  id=3347  word='low'
+   4: logit=17.0000  id=2797  word='clear'
+   5: logit=16.7500  id=1550  word='high'
+   6: logit=16.7500  id=3873  word='bad'
+   7: logit=14.8125  id=13382  word='accurate'
+   8: logit=14.2500  id=99055  word='blurry'
+   9: logit=13.3125  id=9073  word='excellent'
+  10: logit=13.3125  id=17232  word='sharp'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=24.3750  id=7852  word='poor'
+   2: logit=19.8750  id=3347  word='low'
+   3: logit=19.2500  id=3873  word='bad'
+   4: logit=17.1250  id=1661  word='good'
+   5: logit=16.5000  id=11  word=','
+   6: logit=15.6875  id=1550  word='high'
+   7: logit=15.6250  id=1602  word='very'
+   8: logit=15.5625  id=99055  word='blurry'
+   9: logit=14.8125  id=6975  word='uns'
+  10: logit=14.5625  id=24416  word='unclear'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=21.7500  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=18.5000  id=1550  word='high'
+   4: logit=18.1250  id=2797  word='clear'
+   5: logit=17.5000  id=3347  word='low'
+   6: logit=16.5000  id=3873  word='bad'
+   7: logit=14.9375  id=13382  word='accurate'
+   8: logit=14.3750  id=99055  word='blurry'
+   9: logit=14.3750  id=17232  word='sharp'
+  10: logit=14.1250  id=9073  word='excellent'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=22.8750  id=1661  word='good'
+   2: logit=20.3750  id=7852  word='poor'
+   3: logit=18.5000  id=1550  word='high'
+   4: logit=17.8750  id=2797  word='clear'
+   5: logit=16.0000  id=3347  word='low'
+   6: logit=16.0000  id=3873  word='bad'
+   7: logit=14.8750  id=13382  word='accurate'
+   8: logit=14.5000  id=17232  word='sharp'
+   9: logit=14.4375  id=9073  word='excellent'
+  10: logit=13.8125  id=1632  word='well'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=22.8750  id=1661  word='good'
+   2: logit=19.1250  id=7852  word='poor'
+   3: logit=19.0000  id=1550  word='high'
+   4: logit=17.6250  id=2797  word='clear'
+   5: logit=15.0625  id=13382  word='accurate'
+   6: logit=14.6875  id=3347  word='low'
+   7: logit=14.6250  id=3873  word='bad'
+   8: logit=14.4375  id=9073  word='excellent'
+   9: logit=14.0625  id=17232  word='sharp'
+  10: logit=13.6250  id=1632  word='well'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=24.6250  id=7852  word='poor'
+   2: logit=19.6250  id=3347  word='low'
+   3: logit=18.8750  id=3873  word='bad'
+   4: logit=18.6250  id=1661  word='good'
+   5: logit=15.3750  id=1602  word='very'
+   6: logit=14.6875  id=6975  word='uns'
+   7: logit=14.6250  id=99055  word='blurry'
+   8: logit=14.2500  id=1550  word='high'
+   9: logit=13.6250  id=11  word=','
+  10: logit=13.3750  id=2797  word='clear'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=21.8750  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=17.0000  id=2797  word='clear'
+   4: logit=16.3750  id=3873  word='bad'
+   5: logit=15.9375  id=1550  word='high'
+   6: logit=15.6875  id=3347  word='low'
+   7: logit=14.8125  id=13382  word='accurate'
+   8: logit=13.3750  id=99055  word='blurry'
+   9: logit=13.1875  id=9073  word='excellent'
+  10: logit=12.3750  id=14888  word='strange'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=23.1250  id=1661  word='good'
+   2: logit=19.5000  id=7852  word='poor'
+   3: logit=18.8750  id=1550  word='high'
+   4: logit=18.1250  id=2797  word='clear'
+   5: logit=15.3750  id=3873  word='bad'
+   6: logit=15.3125  id=13382  word='accurate'
+   7: logit=14.7500  id=3347  word='low'
+   8: logit=14.6250  id=9073  word='excellent'
+   9: logit=14.0000  id=17232  word='sharp'
+  10: logit=13.5625  id=11  word=','
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=22.7500  id=1661  word='good'
+   2: logit=19.7500  id=7852  word='poor'
+   3: logit=17.7500  id=1550  word='high'
+   4: logit=17.5000  id=2797  word='clear'
+   5: logit=15.7500  id=3873  word='bad'
+   6: logit=15.3125  id=13382  word='accurate'
+   7: logit=14.8125  id=3347  word='low'
+   8: logit=13.9375  id=9073  word='excellent'
+   9: logit=13.1250  id=1632  word='well'
+  10: logit=13.0625  id=17232  word='sharp'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=23.2500  id=1661  word='good'
+   2: logit=19.6250  id=7852  word='poor'
+   3: logit=19.1250  id=1550  word='high'
+   4: logit=18.1250  id=2797  word='clear'
+   5: logit=15.3750  id=3873  word='bad'
+   6: logit=15.2500  id=13382  word='accurate'
+   7: logit=14.7500  id=3347  word='low'
+   8: logit=14.7500  id=9073  word='excellent'
+   9: logit=14.1250  id=17232  word='sharp'
+  10: logit=13.6250  id=11  word=','
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=23.3750  id=1661  word='good'
+   2: logit=19.2500  id=7852  word='poor'
+   3: logit=19.2500  id=1550  word='high'
+   4: logit=18.1250  id=2797  word='clear'
+   5: logit=15.0625  id=13382  word='accurate'
+   6: logit=14.9375  id=9073  word='excellent'
+   7: logit=14.8125  id=3873  word='bad'
+   8: logit=14.5625  id=17232  word='sharp'
+   9: logit=14.4375  id=3347  word='low'
+  10: logit=13.8750  id=11  word=','
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=22.2500  id=7852  word='poor'
+   2: logit=21.6250  id=1661  word='good'
+   3: logit=17.5000  id=3347  word='low'
+   4: logit=17.1250  id=3873  word='bad'
+   5: logit=16.1250  id=2797  word='clear'
+   6: logit=15.1875  id=1550  word='high'
+   7: logit=14.6875  id=13382  word='accurate'
+   8: logit=14.1875  id=99055  word='blurry'
+   9: logit=13.3125  id=9073  word='excellent'
+  10: logit=12.8125  id=1602  word='very'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=21.6250  id=1661  word='good'
+   2: logit=20.7500  id=7852  word='poor'
+   3: logit=16.5000  id=2797  word='clear'
+   4: logit=16.1250  id=3873  word='bad'
+   5: logit=16.1250  id=1550  word='high'
+   6: logit=16.0000  id=3347  word='low'
+   7: logit=14.6875  id=13382  word='accurate'
+   8: logit=13.6250  id=99055  word='blurry'
+   9: logit=13.0000  id=9073  word='excellent'
+  10: logit=12.4375  id=17232  word='sharp'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=24.5000  id=7852  word='poor'
+   2: logit=20.1250  id=1661  word='good'
+   3: logit=19.0000  id=3347  word='low'
+   4: logit=18.7500  id=3873  word='bad'
+   5: logit=15.0000  id=1550  word='high'
+   6: logit=14.8125  id=99055  word='blurry'
+   7: logit=14.6250  id=1602  word='very'
+   8: logit=14.3750  id=2797  word='clear'
+   9: logit=14.0625  id=6975  word='uns'
+  10: logit=13.7500  id=13382  word='accurate'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=22.2500  id=7852  word='poor'
+   2: logit=21.6250  id=1661  word='good'
+   3: logit=17.3750  id=3347  word='low'
+   4: logit=17.0000  id=3873  word='bad'
+   5: logit=16.6250  id=2797  word='clear'
+   6: logit=15.8750  id=1550  word='high'
+   7: logit=15.1250  id=13382  word='accurate'
+   8: logit=14.8750  id=99055  word='blurry'
+   9: logit=13.2500  id=14888  word='strange'
+  10: logit=13.1250  id=52733  word='fuzzy'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=22.7500  id=1661  word='good'
+   2: logit=20.6250  id=7852  word='poor'
+   3: logit=17.5000  id=2797  word='clear'
+   4: logit=17.2500  id=1550  word='high'
+   5: logit=15.5625  id=3347  word='low'
+   6: logit=15.3750  id=3873  word='bad'
+   7: logit=14.5625  id=13382  word='accurate'
+   8: logit=14.3125  id=17232  word='sharp'
+   9: logit=14.1875  id=9073  word='excellent'
+  10: logit=13.9375  id=99055  word='blurry'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=22.3750  id=1661  word='good'
+   2: logit=20.7500  id=7852  word='poor'
+   3: logit=17.2500  id=2797  word='clear'
+   4: logit=16.7500  id=1550  word='high'
+   5: logit=16.1250  id=3347  word='low'
+   6: logit=15.8750  id=3873  word='bad'
+   7: logit=14.7500  id=13382  word='accurate'
+   8: logit=14.1875  id=25489  word='realistic'
+   9: logit=14.0000  id=99055  word='blurry'
+  10: logit=13.6250  id=17232  word='sharp'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=21.5000  id=1661  word='good'
+   2: logit=19.6250  id=7852  word='poor'
+   3: logit=17.6250  id=1550  word='high'
+   4: logit=16.5000  id=2797  word='clear'
+   5: logit=15.1875  id=3347  word='low'
+   6: logit=14.1250  id=3873  word='bad'
+   7: logit=13.7500  id=1632  word='well'
+   8: logit=13.5000  id=14888  word='strange'
+   9: logit=13.3750  id=13382  word='accurate'
+  10: logit=13.3750  id=17232  word='sharp'
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=22.3750  id=1661  word='good'
+   2: logit=20.3750  id=7852  word='poor'
+   3: logit=17.7500  id=2797  word='clear'
+   4: logit=17.5000  id=1550  word='high'
+   5: logit=15.9375  id=3347  word='low'
+   6: logit=15.5000  id=3873  word='bad'
+   7: logit=14.6250  id=13382  word='accurate'
+   8: logit=14.6250  id=25489  word='realistic'
+   9: logit=13.8125  id=1632  word='well'
+  10: logit=13.7500  id=9073  word='excellent'
+----------------------------------------
+
+/home/ippl/xxr/mPLUG-Owl/mPLUG-Owl3/llava_zeroshot.py 
+Using device: cuda:0
+Loaded dataset 'konvid1k' with 1200 samples.
+Loaded dataset 'live-vqc' with 585 samples.
+Loaded dataset 'maxwell' with 909 samples.
+Loaded dataset 'lsvq-test' with 10759 samples.
+Loaded dataset 'lsvq-1080p' with 3573 samples.
+Loading LLaVA-NeXT-Video model...
+LLaVA-NeXT model will be loaded with dtype: torch.bfloat16
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:03<00:00,  1.05s/it]
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Chat templates should be in a 'chat_template.jinja' file but found key='chat_template' in the processor's config. Make sure to move your template to its own file.
+Model loaded. Primary parameter device: cuda:0
+device:  cuda:1
+共找到23张图片
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=23.2500  id=1781  word='good'
+   2: logit=22.5000  id=1880  word='high'
+   3: logit=18.6250  id=2821  word='clear'
+   4: logit=17.1250  id=21210  word='impress'
+   5: logit=17.1250  id=15129  word='excellent'
+   6: logit=16.5000  id=7575  word='nice'
+   7: logit=16.3750  id=27189  word='decent'
+   8: logit=16.1250  id=15301  word='sharp'
+   9: logit=16.0000  id=21246  word='pleasant'
+  10: logit=15.9375  id=5119  word='satisf'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=21.3750  id=1880  word='high'
+   2: logit=21.1250  id=1781  word='good'
+   3: logit=18.0000  id=1999  word='bl'
+   4: logit=17.5000  id=6460  word='poor'
+   5: logit=17.2500  id=21210  word='impress'
+   6: logit=17.0000  id=4482  word='low'
+   7: logit=16.2500  id=2821  word='clear'
+   8: logit=15.8750  id=29191  word='striking'
+   9: logit=15.8125  id=15129  word='excellent'
+  10: logit=15.5000  id=15301  word='sharp'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=20.6250  id=1781  word='good'
+   2: logit=20.5000  id=1880  word='high'
+   3: logit=18.3750  id=2821  word='clear'
+   4: logit=17.8750  id=6460  word='poor'
+   5: logit=17.3750  id=4482  word='low'
+   6: logit=16.6250  id=1999  word='bl'
+   7: logit=15.7500  id=21210  word='impress'
+   8: logit=15.0625  id=27189  word='decent'
+   9: logit=14.8750  id=15590  word='reasonable'
+  10: logit=14.6875  id=15129  word='excellent'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=22.5000  id=1781  word='good'
+   2: logit=22.0000  id=1880  word='high'
+   3: logit=17.6250  id=2821  word='clear'
+   4: logit=17.3750  id=21210  word='impress'
+   5: logit=16.6250  id=15129  word='excellent'
+   6: logit=16.5000  id=29191  word='striking'
+   7: logit=16.5000  id=6460  word='poor'
+   8: logit=16.2500  id=7575  word='nice'
+   9: logit=16.0000  id=27189  word='decent'
+  10: logit=15.6250  id=15301  word='sharp'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=21.5000  id=1781  word='good'
+   2: logit=20.6250  id=1880  word='high'
+   3: logit=17.8750  id=2821  word='clear'
+   4: logit=17.7500  id=6460  word='poor'
+   5: logit=17.0000  id=4482  word='low'
+   6: logit=16.3750  id=27189  word='decent'
+   7: logit=16.0000  id=15590  word='reasonable'
+   8: logit=15.7500  id=1999  word='bl'
+   9: logit=15.1875  id=15301  word='sharp'
+  10: logit=15.1250  id=13173  word='detailed'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=20.7500  id=4482  word='low'
+   2: logit=20.7500  id=6460  word='poor'
+   3: logit=19.1250  id=1999  word='bl'
+   4: logit=17.2500  id=1781  word='good'
+   5: logit=15.7500  id=2646  word='gra'
+   6: logit=15.6250  id=1880  word='high'
+   7: logit=14.9375  id=4967  word='subject'
+   8: logit=14.8750  id=2821  word='clear'
+   9: logit=14.6250  id=4319  word='bad'
+  10: logit=14.5000  id=285  word='f'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=21.1250  id=1880  word='high'
+   2: logit=21.0000  id=1781  word='good'
+   3: logit=19.1250  id=6460  word='poor'
+   4: logit=18.5000  id=4482  word='low'
+   5: logit=17.7500  id=2821  word='clear'
+   6: logit=16.7500  id=1999  word='bl'
+   7: logit=16.5000  id=13173  word='detailed'
+   8: logit=15.5625  id=21210  word='impress'
+   9: logit=15.3750  id=15301  word='sharp'
+  10: logit=15.2500  id=27189  word='decent'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=22.8750  id=1781  word='good'
+   2: logit=22.3750  id=1880  word='high'
+   3: logit=18.7500  id=2821  word='clear'
+   4: logit=18.0000  id=6460  word='poor'
+   5: logit=17.0000  id=15301  word='sharp'
+   6: logit=17.0000  id=21210  word='impress'
+   7: logit=17.0000  id=27189  word='decent'
+   8: logit=16.2500  id=4482  word='low'
+   9: logit=16.1250  id=7575  word='nice'
+  10: logit=16.0000  id=15129  word='excellent'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=21.6250  id=1781  word='good'
+   2: logit=21.0000  id=1880  word='high'
+   3: logit=17.0000  id=21210  word='impress'
+   4: logit=16.6250  id=2821  word='clear'
+   5: logit=16.3750  id=6460  word='poor'
+   6: logit=16.1250  id=29191  word='striking'
+   7: logit=15.6875  id=15129  word='excellent'
+   8: logit=15.6250  id=7575  word='nice'
+   9: logit=15.4375  id=27189  word='decent'
+  10: logit=15.3750  id=4482  word='low'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=19.8750  id=1781  word='good'
+   2: logit=19.6250  id=1880  word='high'
+   3: logit=18.2500  id=6460  word='poor'
+   4: logit=18.1250  id=4482  word='low'
+   5: logit=16.7500  id=1999  word='bl'
+   6: logit=16.5000  id=2821  word='clear'
+   7: logit=15.0625  id=4967  word='subject'
+   8: logit=14.7500  id=27189  word='decent'
+   9: logit=14.6875  id=13173  word='detailed'
+  10: logit=14.6250  id=2286  word='variable'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=19.8750  id=1880  word='high'
+   2: logit=19.5000  id=1781  word='good'
+   3: logit=18.3750  id=4482  word='low'
+   4: logit=18.3750  id=6460  word='poor'
+   5: logit=16.7500  id=1999  word='bl'
+   6: logit=16.3750  id=2821  word='clear'
+   7: logit=15.3750  id=13173  word='detailed'
+   8: logit=15.3750  id=29191  word='striking'
+   9: logit=15.0625  id=21210  word='impress'
+  10: logit=14.3750  id=2286  word='variable'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=21.1250  id=1880  word='high'
+   2: logit=19.8750  id=1781  word='good'
+   3: logit=17.5000  id=4482  word='low'
+   4: logit=17.5000  id=6460  word='poor'
+   5: logit=16.6250  id=29191  word='striking'
+   6: logit=16.5000  id=2821  word='clear'
+   7: logit=16.1250  id=21210  word='impress'
+   8: logit=15.7500  id=13173  word='detailed'
+   9: logit=15.5000  id=1999  word='bl'
+  10: logit=15.4375  id=22567  word='remarkable'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=21.1250  id=1880  word='high'
+   2: logit=20.1250  id=1781  word='good'
+   3: logit=17.5000  id=4482  word='low'
+   4: logit=17.5000  id=6460  word='poor'
+   5: logit=16.7500  id=2821  word='clear'
+   6: logit=16.2500  id=29191  word='striking'
+   7: logit=16.0000  id=21210  word='impress'
+   8: logit=15.8125  id=13173  word='detailed'
+   9: logit=15.7500  id=1999  word='bl'
+  10: logit=15.1875  id=22567  word='remarkable'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=20.8750  id=1880  word='high'
+   2: logit=19.7500  id=1781  word='good'
+   3: logit=17.6250  id=4482  word='low'
+   4: logit=17.6250  id=6460  word='poor'
+   5: logit=16.3750  id=29191  word='striking'
+   6: logit=16.2500  id=2821  word='clear'
+   7: logit=15.9375  id=21210  word='impress'
+   8: logit=15.6250  id=1999  word='bl'
+   9: logit=15.6250  id=13173  word='detailed'
+  10: logit=15.2500  id=22567  word='remarkable'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=21.6250  id=1781  word='good'
+   2: logit=20.3750  id=1880  word='high'
+   3: logit=17.1250  id=6460  word='poor'
+   4: logit=16.7500  id=4482  word='low'
+   5: logit=16.5000  id=2821  word='clear'
+   6: logit=16.3750  id=7575  word='nice'
+   7: logit=16.1250  id=27189  word='decent'
+   8: logit=15.7500  id=21210  word='impress'
+   9: logit=15.5625  id=21246  word='pleasant'
+  10: logit=15.5000  id=5929  word='appe'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=20.1250  id=1781  word='good'
+   2: logit=19.3750  id=1880  word='high'
+   3: logit=17.6250  id=4482  word='low'
+   4: logit=17.5000  id=6460  word='poor'
+   5: logit=16.6250  id=1999  word='bl'
+   6: logit=16.0000  id=2821  word='clear'
+   7: logit=15.0625  id=21210  word='impress'
+   8: logit=15.0625  id=27189  word='decent'
+   9: logit=14.7500  id=15590  word='reasonable'
+  10: logit=14.5625  id=7575  word='nice'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=20.6250  id=1781  word='good'
+   2: logit=20.1250  id=1880  word='high'
+   3: logit=17.0000  id=4482  word='low'
+   4: logit=17.0000  id=6460  word='poor'
+   5: logit=16.5000  id=2821  word='clear'
+   6: logit=15.8125  id=21210  word='impress'
+   7: logit=15.7500  id=1999  word='bl'
+   8: logit=15.3125  id=27189  word='decent'
+   9: logit=15.1250  id=15590  word='reasonable'
+  10: logit=14.8750  id=7575  word='nice'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=20.7500  id=1781  word='good'
+   2: logit=20.1250  id=1880  word='high'
+   3: logit=17.1250  id=4482  word='low'
+   4: logit=17.0000  id=6460  word='poor'
+   5: logit=16.3750  id=2821  word='clear'
+   6: logit=15.8125  id=1999  word='bl'
+   7: logit=15.6250  id=21210  word='impress'
+   8: logit=15.3125  id=27189  word='decent'
+   9: logit=15.1250  id=7575  word='nice'
+  10: logit=15.0625  id=15590  word='reasonable'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=19.8750  id=1781  word='good'
+   2: logit=19.0000  id=1880  word='high'
+   3: logit=18.0000  id=4482  word='low'
+   4: logit=17.6250  id=6460  word='poor'
+   5: logit=16.6250  id=1999  word='bl'
+   6: logit=16.0000  id=2821  word='clear'
+   7: logit=14.9375  id=27189  word='decent'
+   8: logit=14.8750  id=15590  word='reasonable'
+   9: logit=14.4375  id=21210  word='impress'
+  10: logit=14.3750  id=4967  word='subject'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=23.6250  id=1880  word='high'
+   2: logit=20.1250  id=1781  word='good'
+   3: logit=18.3750  id=21210  word='impress'
+   4: logit=17.7500  id=29191  word='striking'
+   5: logit=17.1250  id=13173  word='detailed'
+   6: logit=16.7500  id=15129  word='excellent'
+   7: logit=16.3750  id=1998  word='vis'
+   8: logit=16.3750  id=325  word='v'
+   9: logit=16.3750  id=22567  word='remarkable'
+  10: logit=16.0000  id=4332  word='capt'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=24.8750  id=1880  word='high'
+   2: logit=19.7500  id=1781  word='good'
+   3: logit=19.2500  id=21210  word='impress'
+   4: logit=18.2500  id=13173  word='detailed'
+   5: logit=17.8750  id=29191  word='striking'
+   6: logit=16.8750  id=22567  word='remarkable'
+   7: logit=16.7500  id=15129  word='excellent'
+   8: logit=16.5000  id=3682  word='exception'
+   9: logit=15.8125  id=1998  word='vis'
+  10: logit=15.4375  id=380  word='st'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=23.3750  id=1880  word='high'
+   2: logit=20.7500  id=1781  word='good'
+   3: logit=18.6250  id=13173  word='detailed'
+   4: logit=17.1250  id=21210  word='impress'
+   5: logit=16.5000  id=325  word='v'
+   6: logit=16.2500  id=2821  word='clear'
+   7: logit=16.2500  id=1616  word='art'
+   8: logit=16.1250  id=1532  word='well'
+   9: logit=16.0000  id=5929  word='appe'
+  10: logit=15.8750  id=29191  word='striking'
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=23.8750  id=1880  word='high'
+   2: logit=20.1250  id=1781  word='good'
+   3: logit=19.2500  id=21210  word='impress'
+   4: logit=17.7500  id=13173  word='detailed'
+   5: logit=17.3750  id=29191  word='striking'
+   6: logit=16.8750  id=22567  word='remarkable'
+   7: logit=16.5000  id=15129  word='excellent'
+   8: logit=15.8750  id=3682  word='exception'
+   9: logit=15.3750  id=1998  word='vis'
+  10: logit=15.2500  id=2821  word='clear'
+----------------------------------------
+
+
+/home/ippl/.conda/envs/xrllm/bin/python /home/ippl/xxr/mPLUG-Owl/mPLUG-Owl3/internvl3_zeroshot.py
+device:  cuda:0
+Loaded test dataset 'konvid1k' with 1200 samples.
+Loaded test dataset 'live-vqc' with 585 samples.
+Loaded test dataset 'maxwell' with 909 samples.
+Loaded test dataset 'lsvq-test' with 10759 samples.
+Loaded test dataset 'lsvq-1080p' with 3573 samples.
+Loading InternVL3 model...
+InternVL3 model will be loaded with dtype: torch.bfloat16
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:05<00:00,  1.28s/it]
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+InternVL3 Model loaded.
+Model is on device: cuda:0
+device:  cuda:1
+共找到23张图片
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=39.5000  id=1661  word='good'
+   2: logit=37.7500  id=1550  word='high'
+   3: logit=28.1250  id=2797  word='clear'
+   4: logit=25.5000  id=3746  word='strong'
+   5: logit=25.2500  id=57731  word='satisfactory'
+   6: logit=24.2500  id=1632  word='well'
+   7: logit=24.0000  id=7684  word='Good'
+   8: logit=23.8750  id=6915  word='fine'
+   9: logit=23.6250  id=4240  word='clean'
+  10: logit=23.6250  id=6419  word='nice'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=30.1250  id=1661  word='good'
+   2: logit=27.2500  id=3347  word='low'
+   3: logit=26.7500  id=1550  word='high'
+   4: logit=26.3750  id=7852  word='poor'
+   5: logit=25.3750  id=7040  word='interesting'
+   6: logit=24.5000  id=31592  word='artistic'
+   7: logit=23.5000  id=8741  word='dynamic'
+   8: logit=22.3750  id=99055  word='blurry'
+   9: logit=22.0000  id=15978  word='impressive'
+  10: logit=21.8750  id=2797  word='clear'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=32.7500  id=1661  word='good'
+   2: logit=29.5000  id=1550  word='high'
+   3: logit=27.2500  id=2797  word='clear'
+   4: logit=23.6250  id=14977  word='decent'
+   5: logit=23.2500  id=57731  word='satisfactory'
+   6: logit=22.3750  id=3746  word='strong'
+   7: logit=22.1250  id=11682  word='detailed'
+   8: logit=22.1250  id=21555  word='acceptable'
+   9: logit=22.0000  id=4240  word='clean'
+  10: logit=21.8750  id=1632  word='well'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=39.5000  id=1661  word='good'
+   2: logit=35.7500  id=1550  word='high'
+   3: logit=25.8750  id=2797  word='clear'
+   4: logit=25.7500  id=57731  word='satisfactory'
+   5: logit=25.5000  id=3746  word='strong'
+   6: logit=25.0000  id=6419  word='nice'
+   7: logit=24.6250  id=15978  word='impressive'
+   8: logit=24.5000  id=7684  word='Good'
+   9: logit=23.3750  id=6437  word='solid'
+  10: logit=23.3750  id=18536  word='good'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=32.2500  id=1661  word='good'
+   2: logit=28.1250  id=1550  word='high'
+   3: logit=27.7500  id=2797  word='clear'
+   4: logit=23.3750  id=57731  word='satisfactory'
+   5: logit=23.1250  id=14977  word='decent'
+   6: logit=22.8750  id=4240  word='clean'
+   7: logit=22.3750  id=21555  word='acceptable'
+   8: logit=21.2500  id=6437  word='solid'
+   9: logit=21.1250  id=1632  word='well'
+  10: logit=21.0000  id=6915  word='fine'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=36.7500  id=3347  word='low'
+   2: logit=36.5000  id=7852  word='poor'
+   3: logit=26.7500  id=17003  word='challenging'
+   4: logit=25.6250  id=99055  word='blurry'
+   5: logit=25.0000  id=1661  word='good'
+   6: logit=24.5000  id=5000  word='difficult'
+   7: logit=24.3750  id=3873  word='bad'
+   8: logit=23.0000  id=11165  word='rough'
+   9: logit=22.7500  id=7199  word='limited'
+  10: logit=22.7500  id=24416  word='unclear'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=35.2500  id=1661  word='good'
+   2: logit=32.2500  id=1550  word='high'
+   3: logit=25.8750  id=2797  word='clear'
+   4: logit=24.7500  id=57731  word='satisfactory'
+   5: logit=24.2500  id=11682  word='detailed'
+   6: logit=23.6250  id=14977  word='decent'
+   7: logit=23.5000  id=3746  word='strong'
+   8: logit=22.8750  id=21555  word='acceptable'
+   9: logit=22.7500  id=6437  word='solid'
+  10: logit=22.6250  id=15978  word='impressive'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=38.2500  id=1661  word='good'
+   2: logit=35.0000  id=1550  word='high'
+   3: logit=25.8750  id=2797  word='clear'
+   4: logit=25.2500  id=3746  word='strong'
+   5: logit=24.6250  id=57731  word='satisfactory'
+   6: logit=23.6250  id=7684  word='Good'
+   7: logit=23.5000  id=6419  word='nice'
+   8: logit=23.3750  id=6437  word='solid'
+   9: logit=23.1250  id=1632  word='well'
+  10: logit=23.1250  id=14977  word='decent'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=38.2500  id=1661  word='good'
+   2: logit=35.2500  id=1550  word='high'
+   3: logit=26.8750  id=3746  word='strong'
+   4: logit=25.8750  id=57731  word='satisfactory'
+   5: logit=25.7500  id=2797  word='clear'
+   6: logit=24.5000  id=6419  word='nice'
+   7: logit=24.3750  id=6437  word='solid'
+   8: logit=24.2500  id=15978  word='impressive'
+   9: logit=24.1250  id=14977  word='decent'
+  10: logit=23.3750  id=7684  word='Good'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=28.7500  id=3347  word='low'
+   2: logit=28.5000  id=7852  word='poor'
+   3: logit=28.0000  id=1661  word='good'
+   4: logit=24.6250  id=1550  word='high'
+   5: logit=23.6250  id=2797  word='clear'
+   6: logit=23.3750  id=99055  word='blurry'
+   7: logit=22.3750  id=23925  word='grain'
+   8: logit=22.2500  id=3873  word='bad'
+   9: logit=20.6250  id=8413  word='soft'
+  10: logit=20.5000  id=72400  word='blurred'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=30.8750  id=1661  word='good'
+   2: logit=29.7500  id=1550  word='high'
+   3: logit=25.7500  id=2797  word='clear'
+   4: logit=23.3750  id=11682  word='detailed'
+   5: logit=22.6250  id=15978  word='impressive'
+   6: logit=22.2500  id=7852  word='poor'
+   7: logit=22.1250  id=4240  word='clean'
+   8: logit=21.7500  id=57731  word='satisfactory'
+   9: logit=21.6250  id=1632  word='well'
+  10: logit=21.3750  id=3347  word='low'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=35.2500  id=1550  word='high'
+   2: logit=35.2500  id=1661  word='good'
+   3: logit=25.6250  id=3746  word='strong'
+   4: logit=24.7500  id=2797  word='clear'
+   5: logit=24.5000  id=15978  word='impressive'
+   6: logit=23.7500  id=57731  word='satisfactory'
+   7: logit=23.7500  id=11682  word='detailed'
+   8: logit=23.0000  id=1632  word='well'
+   9: logit=22.7500  id=6785  word='positive'
+  10: logit=22.5000  id=6437  word='solid'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=30.8750  id=1661  word='good'
+   2: logit=30.1250  id=1550  word='high'
+   3: logit=25.5000  id=2797  word='clear'
+   4: logit=23.7500  id=11682  word='detailed'
+   5: logit=23.6250  id=15978  word='impressive'
+   6: logit=22.5000  id=1632  word='well'
+   7: logit=21.8750  id=57731  word='satisfactory'
+   8: logit=21.6250  id=4240  word='clean'
+   9: logit=21.0000  id=3746  word='strong'
+  10: logit=21.0000  id=6785  word='positive'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=35.5000  id=1661  word='good'
+   2: logit=35.2500  id=1550  word='high'
+   3: logit=25.7500  id=3746  word='strong'
+   4: logit=25.3750  id=2797  word='clear'
+   5: logit=24.6250  id=15978  word='impressive'
+   6: logit=24.0000  id=57731  word='satisfactory'
+   7: logit=24.0000  id=11682  word='detailed'
+   8: logit=23.1250  id=1632  word='well'
+   9: logit=22.8750  id=6785  word='positive'
+  10: logit=22.7500  id=6437  word='solid'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=35.7500  id=1661  word='good'
+   2: logit=30.6250  id=1550  word='high'
+   3: logit=28.1250  id=2797  word='clear'
+   4: logit=26.2500  id=57731  word='satisfactory'
+   5: logit=25.6250  id=14977  word='decent'
+   6: logit=25.1250  id=21555  word='acceptable'
+   7: logit=23.7500  id=3746  word='strong'
+   8: logit=23.2500  id=6419  word='nice'
+   9: logit=23.2500  id=6437  word='solid'
+  10: logit=22.7500  id=4240  word='clean'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=28.8750  id=3347  word='low'
+   2: logit=28.7500  id=1661  word='good'
+   3: logit=28.2500  id=7852  word='poor'
+   4: logit=27.3750  id=1550  word='high'
+   5: logit=23.8750  id=2797  word='clear'
+   6: logit=22.7500  id=99055  word='blurry'
+   7: logit=21.2500  id=14977  word='decent'
+   8: logit=21.2500  id=57731  word='satisfactory'
+   9: logit=21.0000  id=5461  word='average'
+  10: logit=21.0000  id=10876  word='smooth'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=28.7500  id=1661  word='good'
+   2: logit=27.8750  id=1550  word='high'
+   3: logit=25.5000  id=7852  word='poor'
+   4: logit=25.0000  id=3347  word='low'
+   5: logit=24.1250  id=2797  word='clear'
+   6: logit=23.3750  id=15978  word='impressive'
+   7: logit=22.7500  id=7040  word='interesting'
+   8: logit=21.1250  id=3746  word='strong'
+   9: logit=21.0000  id=11682  word='detailed'
+  10: logit=20.7500  id=6419  word='nice'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=33.5000  id=7852  word='poor'
+   2: logit=33.2500  id=3347  word='low'
+   3: logit=25.3750  id=1661  word='good'
+   4: logit=25.2500  id=99055  word='blurry'
+   5: logit=24.0000  id=1550  word='high'
+   6: logit=22.8750  id=72400  word='blurred'
+   7: logit=22.7500  id=61136  word='distorted'
+   8: logit=22.7500  id=3873  word='bad'
+   9: logit=22.6250  id=7199  word='limited'
+  10: logit=22.5000  id=17003  word='challenging'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=29.6250  id=3347  word='low'
+   2: logit=29.1250  id=7852  word='poor'
+   3: logit=25.7500  id=1661  word='good'
+   4: logit=23.3750  id=1550  word='high'
+   5: logit=22.6250  id=17003  word='challenging'
+   6: logit=22.3750  id=61136  word='distorted'
+   7: logit=22.0000  id=7199  word='limited'
+   8: logit=22.0000  id=7040  word='interesting'
+   9: logit=22.0000  id=23925  word='grain'
+  10: logit=21.8750  id=43278  word='questionable'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=41.5000  id=1550  word='high'
+   2: logit=36.2500  id=1661  word='good'
+   3: logit=29.5000  id=15978  word='impressive'
+   4: logit=26.0000  id=3746  word='strong'
+   5: logit=25.8750  id=5124  word='High'
+   6: logit=25.2500  id=100964  word='高的'
+   7: logit=25.2500  id=9073  word='excellent'
+   8: logit=24.5000  id=27561  word='-high'
+   9: logit=24.2500  id=11892  word='high'
+  10: logit=23.1250  id=1632  word='well'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=42.0000  id=1550  word='high'
+   2: logit=35.5000  id=1661  word='good'
+   3: logit=29.2500  id=15978  word='impressive'
+   4: logit=27.0000  id=3746  word='strong'
+   5: logit=26.0000  id=5124  word='High'
+   6: logit=26.0000  id=100964  word='高的'
+   7: logit=24.5000  id=11892  word='high'
+   8: logit=24.5000  id=27561  word='-high'
+   9: logit=23.8750  id=9073  word='excellent'
+  10: logit=23.7500  id=43361  word='polished'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=35.2500  id=1661  word='good'
+   2: logit=33.2500  id=1550  word='high'
+   3: logit=25.2500  id=6785  word='positive'
+   4: logit=24.3750  id=15978  word='impressive'
+   5: logit=24.3750  id=3746  word='strong'
+   6: logit=24.2500  id=57731  word='satisfactory'
+   7: logit=23.8750  id=6419  word='nice'
+   8: logit=23.5000  id=11521  word='creative'
+   9: logit=23.5000  id=31592  word='artistic'
+  10: logit=23.3750  id=1632  word='well'
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=41.5000  id=1550  word='high'
+   2: logit=34.7500  id=1661  word='good'
+   3: logit=29.6250  id=15978  word='impressive'
+   4: logit=26.7500  id=3746  word='strong'
+   5: logit=25.8750  id=5124  word='High'
+   6: logit=25.2500  id=100964  word='高的'
+   7: logit=24.3750  id=26779  word='sophisticated'
+   8: logit=24.2500  id=11892  word='high'
+   9: logit=24.2500  id=27561  word='-high'
+  10: logit=24.1250  id=9073  word='excellent'
+
+Qwen2-VL model...
+Qwen2-VL model will be loaded with dtype: torch.bfloat16
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:50<00:00, 10.20s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Qwen2-VL Model loaded.
+Model is on device: cuda:0
+device:  cuda:1
+共找到23张图片
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=16.5000  id=12040  word='relatively'
+   2: logit=16.3750  id=1602  word='very'
+   3: logit=16.2500  id=1661  word='good'
+   4: logit=15.8125  id=9073  word='excellent'
+   5: logit=15.7500  id=5008  word='quite'
+   6: logit=14.3125  id=1550  word='high'
+   7: logit=14.1250  id=21555  word='acceptable'
+   8: logit=13.7500  id=5461  word='average'
+   9: logit=13.7500  id=6509  word='considered'
+  10: logit=13.6250  id=220  word=''
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=15.6250  id=7852  word='poor'
+   2: logit=14.7500  id=1602  word='very'
+   3: logit=14.0000  id=3347  word='low'
+   4: logit=13.7500  id=12040  word='relatively'
+   5: logit=13.6875  id=5461  word='average'
+   6: logit=12.8125  id=21555  word='acceptable'
+   7: logit=12.5000  id=8789  word='generally'
+   8: logit=12.5000  id=23193  word='moderate'
+   9: logit=12.3750  id=9016  word='extremely'
+  10: logit=12.0000  id=5008  word='quite'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=15.1875  id=12040  word='relatively'
+   2: logit=14.6875  id=7852  word='poor'
+   3: logit=14.6875  id=1661  word='good'
+   4: logit=14.4375  id=1602  word='very'
+   5: logit=14.3125  id=5461  word='average'
+   6: logit=14.2500  id=6509  word='considered'
+   7: logit=14.1250  id=8789  word='generally'
+   8: logit=14.1250  id=21555  word='acceptable'
+   9: logit=13.9375  id=5008  word='quite'
+  10: logit=13.5000  id=23193  word='moderate'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=16.2500  id=12040  word='relatively'
+   2: logit=16.1250  id=1602  word='very'
+   3: logit=15.9375  id=9073  word='excellent'
+   4: logit=15.8125  id=1661  word='good'
+   5: logit=15.5000  id=5008  word='quite'
+   6: logit=14.1250  id=1550  word='high'
+   7: logit=13.6875  id=21555  word='acceptable'
+   8: logit=13.5000  id=5461  word='average'
+   9: logit=13.3125  id=6509  word='considered'
+  10: logit=13.1875  id=220  word=''
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=15.5625  id=7852  word='poor'
+   2: logit=14.4375  id=5461  word='average'
+   3: logit=14.2500  id=1602  word='very'
+   4: logit=14.0625  id=3347  word='low'
+   5: logit=13.7500  id=21555  word='acceptable'
+   6: logit=13.4375  id=23193  word='moderate'
+   7: logit=13.3750  id=12040  word='relatively'
+   8: logit=13.0000  id=6509  word='considered'
+   9: logit=12.8750  id=1661  word='good'
+  10: logit=12.7500  id=8789  word='generally'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=18.0000  id=1602  word='very'
+   2: logit=16.3750  id=9016  word='extremely'
+   3: logit=15.8750  id=7852  word='poor'
+   4: logit=13.9375  id=3347  word='low'
+   5: logit=13.5625  id=12040  word='relatively'
+   6: logit=13.1250  id=8789  word='generally'
+   7: logit=12.7500  id=5008  word='quite'
+   8: logit=12.6250  id=47198  word='exceptionally'
+   9: logit=12.4375  id=220  word=''
+  10: logit=11.3125  id=9073  word='excellent'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=15.9375  id=1661  word='good'
+   2: logit=15.3750  id=12040  word='relatively'
+   3: logit=14.6250  id=21555  word='acceptable'
+   4: logit=14.5625  id=1602  word='very'
+   5: logit=14.4375  id=5461  word='average'
+   6: logit=14.1250  id=9073  word='excellent'
+   7: logit=14.0000  id=7852  word='poor'
+   8: logit=13.9375  id=5008  word='quite'
+   9: logit=13.4375  id=6509  word='considered'
+  10: logit=13.3750  id=23193  word='moderate'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=16.3750  id=12040  word='relatively'
+   2: logit=15.9375  id=1661  word='good'
+   3: logit=15.6250  id=1602  word='very'
+   4: logit=15.4375  id=5008  word='quite'
+   5: logit=14.8750  id=9073  word='excellent'
+   6: logit=14.7500  id=1550  word='high'
+   7: logit=14.3125  id=21555  word='acceptable'
+   8: logit=13.9375  id=5020  word='pretty'
+   9: logit=13.9375  id=5461  word='average'
+  10: logit=13.6875  id=220  word=''
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=15.4375  id=12040  word='relatively'
+   2: logit=15.3750  id=1661  word='good'
+   3: logit=14.7500  id=5008  word='quite'
+   4: logit=14.2500  id=1602  word='very'
+   5: logit=14.0000  id=5461  word='average'
+   6: logit=13.8750  id=9073  word='excellent'
+   7: logit=13.8125  id=21555  word='acceptable'
+   8: logit=13.3750  id=6509  word='considered'
+   9: logit=13.0625  id=7852  word='poor'
+  10: logit=12.9375  id=8789  word='generally'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=15.0000  id=7852  word='poor'
+   2: logit=14.3750  id=1661  word='good'
+   3: logit=14.3125  id=12040  word='relatively'
+   4: logit=14.1875  id=1602  word='very'
+   5: logit=14.0625  id=5461  word='average'
+   6: logit=13.9375  id=21555  word='acceptable'
+   7: logit=13.6250  id=23193  word='moderate'
+   8: logit=13.2500  id=3347  word='low'
+   9: logit=13.1875  id=6509  word='considered'
+  10: logit=12.8125  id=9073  word='excellent'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=15.0625  id=12040  word='relatively'
+   2: logit=14.8125  id=1661  word='good'
+   3: logit=14.3750  id=5461  word='average'
+   4: logit=14.1875  id=7852  word='poor'
+   5: logit=14.1250  id=21555  word='acceptable'
+   6: logit=13.8125  id=1602  word='very'
+   7: logit=13.7500  id=5008  word='quite'
+   8: logit=13.2500  id=9073  word='excellent'
+   9: logit=13.1875  id=23193  word='moderate'
+  10: logit=12.8750  id=6509  word='considered'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=15.7500  id=12040  word='relatively'
+   2: logit=15.3125  id=1661  word='good'
+   3: logit=14.6875  id=5008  word='quite'
+   4: logit=14.5625  id=1602  word='very'
+   5: logit=14.3750  id=5461  word='average'
+   6: logit=14.3750  id=9073  word='excellent'
+   7: logit=14.1875  id=21555  word='acceptable'
+   8: logit=13.6875  id=7852  word='poor'
+   9: logit=13.5000  id=23193  word='moderate'
+  10: logit=13.3125  id=1550  word='high'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=15.5625  id=12040  word='relatively'
+   2: logit=15.0000  id=1661  word='good'
+   3: logit=14.3125  id=5461  word='average'
+   4: logit=14.2500  id=5008  word='quite'
+   5: logit=14.1875  id=21555  word='acceptable'
+   6: logit=13.9375  id=1602  word='very'
+   7: logit=13.6875  id=7852  word='poor'
+   8: logit=13.5625  id=9073  word='excellent'
+   9: logit=13.2500  id=23193  word='moderate'
+  10: logit=13.0000  id=1550  word='high'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=16.0000  id=12040  word='relatively'
+   2: logit=15.5000  id=1661  word='good'
+   3: logit=14.8125  id=5008  word='quite'
+   4: logit=14.6875  id=1602  word='very'
+   5: logit=14.4375  id=5461  word='average'
+   6: logit=14.4375  id=9073  word='excellent'
+   7: logit=14.3750  id=21555  word='acceptable'
+   8: logit=13.9375  id=7852  word='poor'
+   9: logit=13.5625  id=23193  word='moderate'
+  10: logit=13.5000  id=1550  word='high'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=16.0000  id=1661  word='good'
+   2: logit=15.9375  id=12040  word='relatively'
+   3: logit=15.5000  id=5008  word='quite'
+   4: logit=15.2500  id=1602  word='very'
+   5: logit=14.6250  id=21555  word='acceptable'
+   6: logit=14.5625  id=9073  word='excellent'
+   7: logit=14.0625  id=5461  word='average'
+   8: logit=13.5625  id=6509  word='considered'
+   9: logit=13.5000  id=1550  word='high'
+  10: logit=13.2500  id=14977  word='decent'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=14.2500  id=7852  word='poor'
+   2: logit=14.1875  id=1661  word='good'
+   3: logit=14.1250  id=5461  word='average'
+   4: logit=13.9375  id=12040  word='relatively'
+   5: logit=13.8125  id=21555  word='acceptable'
+   6: logit=13.5000  id=1602  word='very'
+   7: logit=13.3125  id=23193  word='moderate'
+   8: logit=13.1875  id=5008  word='quite'
+   9: logit=12.9375  id=3347  word='low'
+  10: logit=12.8750  id=6509  word='considered'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=13.9375  id=5461  word='average'
+   2: logit=13.8750  id=7852  word='poor'
+   3: logit=13.8125  id=1661  word='good'
+   4: logit=13.6875  id=12040  word='relatively'
+   5: logit=13.5625  id=21555  word='acceptable'
+   6: logit=13.3125  id=1602  word='very'
+   7: logit=13.2500  id=5008  word='quite'
+   8: logit=13.0000  id=23193  word='moderate'
+   9: logit=12.6875  id=3347  word='low'
+  10: logit=12.5000  id=6509  word='considered'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=16.6250  id=1602  word='very'
+   2: logit=16.3750  id=7852  word='poor'
+   3: logit=14.6250  id=3347  word='low'
+   4: logit=14.5625  id=9016  word='extremely'
+   5: logit=13.8125  id=12040  word='relatively'
+   6: logit=13.5000  id=5461  word='average'
+   7: logit=13.3125  id=5008  word='quite'
+   8: logit=12.6250  id=23193  word='moderate'
+   9: logit=12.5625  id=8789  word='generally'
+  10: logit=12.4375  id=21555  word='acceptable'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=14.6250  id=7852  word='poor'
+   2: logit=14.1875  id=1602  word='very'
+   3: logit=13.1250  id=3347  word='low'
+   4: logit=13.1250  id=5461  word='average'
+   5: logit=12.8125  id=12040  word='relatively'
+   6: logit=12.7500  id=5008  word='quite'
+   7: logit=12.6875  id=21555  word='acceptable'
+   8: logit=12.4375  id=23193  word='moderate'
+   9: logit=12.3750  id=1661  word='good'
+  10: logit=12.0625  id=9016  word='extremely'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=15.1250  id=9073  word='excellent'
+   2: logit=15.1250  id=1602  word='very'
+   3: logit=14.9375  id=12040  word='relatively'
+   4: logit=14.8125  id=1661  word='good'
+   5: logit=14.2500  id=5008  word='quite'
+   6: logit=13.5000  id=7852  word='poor'
+   7: logit=13.2500  id=21555  word='acceptable'
+   8: logit=13.0625  id=5461  word='average'
+   9: logit=12.5000  id=24364  word='exceptional'
+  10: logit=12.4375  id=1550  word='high'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=15.6250  id=1602  word='very'
+   2: logit=15.3125  id=9073  word='excellent'
+   3: logit=14.8750  id=1661  word='good'
+   4: logit=14.6250  id=12040  word='relatively'
+   5: logit=14.2500  id=5008  word='quite'
+   6: logit=14.0625  id=7852  word='poor'
+   7: logit=13.8125  id=23193  word='moderate'
+   8: logit=13.6250  id=5461  word='average'
+   9: logit=13.4375  id=21555  word='acceptable'
+  10: logit=13.3750  id=6509  word='considered'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=15.2500  id=1661  word='good'
+   2: logit=15.0000  id=1602  word='very'
+   3: logit=14.8125  id=12040  word='relatively'
+   4: logit=14.8125  id=5008  word='quite'
+   5: logit=14.4375  id=7852  word='poor'
+   6: logit=14.1875  id=5461  word='average'
+   7: logit=14.1250  id=9073  word='excellent'
+   8: logit=14.1250  id=21555  word='acceptable'
+   9: logit=13.4375  id=23193  word='moderate'
+  10: logit=13.2500  id=220  word=''
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=15.1250  id=1602  word='very'
+   2: logit=14.7500  id=1661  word='good'
+   3: logit=14.6250  id=12040  word='relatively'
+   4: logit=14.5000  id=9073  word='excellent'
+   5: logit=14.5000  id=7852  word='poor'
+   6: logit=14.4375  id=5008  word='quite'
+   7: logit=13.8125  id=5461  word='average'
+   8: logit=13.5625  id=21555  word='acceptable'
+   9: logit=13.4375  id=6509  word='considered'
+  10: logit=13.4375  id=23193  word='moderate'
+----------------------------------------
+
+
+Loading Qwen2.5-VL model...
+Qwen2.5-VL model will be loaded with dtype: torch.bfloat16
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:05<00:00,  1.01s/it]
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Qwen2.5-VL Model loaded.
+Model is on device(s) via device_map, primary parameter device: cuda:0
+device:  cuda:1
+共找到23张图片
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=24.6250  id=1550  word='high'
+   2: logit=24.3750  id=5008  word='quite'
+   3: logit=23.7500  id=8789  word='generally'
+   4: logit=23.3750  id=1661  word='good'
+   5: logit=22.3750  id=1602  word='very'
+   6: logit=22.1250  id=9073  word='excellent'
+   7: logit=22.0000  id=12040  word='relatively'
+   8: logit=21.0000  id=6509  word='considered'
+   9: logit=20.0000  id=14138  word='fairly'
+  10: logit=19.7500  id=7548  word='highly'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=21.6250  id=23193  word='moderate'
+   2: logit=21.2500  id=8789  word='generally'
+   3: logit=21.0000  id=12040  word='relatively'
+   4: logit=20.3750  id=14400  word='somewhat'
+   5: logit=19.7500  id=69251  word='moderately'
+   6: logit=19.7500  id=14977  word='decent'
+   7: logit=19.5000  id=1661  word='good'
+   8: logit=19.1250  id=43022  word='subjective'
+   9: logit=19.1250  id=57731  word='satisfactory'
+  10: logit=19.0000  id=13276  word='reasonable'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=20.2500  id=12040  word='relatively'
+   2: logit=20.1250  id=23193  word='moderate'
+   3: logit=19.7500  id=8789  word='generally'
+   4: logit=19.2500  id=6509  word='considered'
+   5: logit=18.8750  id=1661  word='good'
+   6: logit=18.3750  id=69251  word='moderately'
+   7: logit=18.3750  id=13276  word='reasonable'
+   8: logit=18.2500  id=1550  word='high'
+   9: logit=18.2500  id=21628  word='rated'
+  10: logit=17.8750  id=14977  word='decent'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=25.1250  id=5008  word='quite'
+   2: logit=24.7500  id=8789  word='generally'
+   3: logit=24.5000  id=1661  word='good'
+   4: logit=23.3750  id=12040  word='relatively'
+   5: logit=23.2500  id=1550  word='high'
+   6: logit=21.7500  id=6509  word='considered'
+   7: logit=21.0000  id=14138  word='fairly'
+   8: logit=20.7500  id=57731  word='satisfactory'
+   9: logit=20.7500  id=9073  word='excellent'
+  10: logit=20.6250  id=21628  word='rated'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=23.6250  id=8789  word='generally'
+   2: logit=23.0000  id=12040  word='relatively'
+   3: logit=23.0000  id=1661  word='good'
+   4: logit=22.3750  id=5008  word='quite'
+   5: logit=21.5000  id=1550  word='high'
+   6: logit=21.2500  id=23193  word='moderate'
+   7: logit=21.2500  id=6509  word='considered'
+   8: logit=21.0000  id=57731  word='satisfactory'
+   9: logit=20.8750  id=13276  word='reasonable'
+  10: logit=20.8750  id=14977  word='decent'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=23.5000  id=5008  word='quite'
+   2: logit=23.3750  id=3347  word='low'
+   3: logit=22.7500  id=7852  word='poor'
+   4: logit=21.5000  id=12040  word='relatively'
+   5: logit=21.3750  id=8789  word='generally'
+   6: logit=21.0000  id=1602  word='very'
+   7: logit=19.7500  id=6509  word='considered'
+   8: logit=19.2500  id=4751  word='rather'
+   9: logit=18.5000  id=21628  word='rated'
+  10: logit=18.1250  id=14138  word='fairly'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=21.7500  id=12040  word='relatively'
+   2: logit=21.1250  id=23193  word='moderate'
+   3: logit=20.6250  id=8789  word='generally'
+   4: logit=20.3750  id=14400  word='somewhat'
+   5: logit=19.8750  id=6509  word='considered'
+   6: logit=19.3750  id=69251  word='moderately'
+   7: logit=19.3750  id=21555  word='acceptable'
+   8: logit=19.1250  id=15503  word='primarily'
+   9: logit=19.1250  id=1661  word='good'
+  10: logit=19.1250  id=13276  word='reasonable'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=24.6250  id=5008  word='quite'
+   2: logit=24.5000  id=8789  word='generally'
+   3: logit=24.0000  id=1550  word='high'
+   4: logit=23.7500  id=12040  word='relatively'
+   5: logit=23.6250  id=1661  word='good'
+   6: logit=21.1250  id=14138  word='fairly'
+   7: logit=20.8750  id=1602  word='very'
+   8: logit=20.6250  id=28446  word='reasonably'
+   9: logit=20.3750  id=14977  word='decent'
+  10: logit=20.2500  id=9073  word='excellent'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=23.7500  id=1550  word='high'
+   2: logit=23.7500  id=5008  word='quite'
+   3: logit=23.3750  id=8789  word='generally'
+   4: logit=22.0000  id=1661  word='good'
+   5: logit=21.6250  id=12040  word='relatively'
+   6: logit=21.2500  id=9073  word='excellent'
+   7: logit=20.8750  id=6509  word='considered'
+   8: logit=20.8750  id=1602  word='very'
+   9: logit=20.0000  id=21628  word='rated'
+  10: logit=19.7500  id=7548  word='highly'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=20.0000  id=12040  word='relatively'
+   2: logit=19.8750  id=23193  word='moderate'
+   3: logit=19.5000  id=8789  word='generally'
+   4: logit=19.2500  id=14400  word='somewhat'
+   5: logit=18.2500  id=69251  word='moderately'
+   6: logit=17.8750  id=1661  word='good'
+   7: logit=17.8750  id=6509  word='considered'
+   8: logit=17.7500  id=21555  word='acceptable'
+   9: logit=17.7500  id=5008  word='quite'
+  10: logit=17.6250  id=13276  word='reasonable'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=20.5000  id=12040  word='relatively'
+   2: logit=20.5000  id=1550  word='high'
+   3: logit=20.1250  id=8789  word='generally'
+   4: logit=19.8750  id=5008  word='quite'
+   5: logit=19.0000  id=1661  word='good'
+   6: logit=18.7500  id=23193  word='moderate'
+   7: logit=18.5000  id=14400  word='somewhat'
+   8: logit=18.3750  id=69251  word='moderately'
+   9: logit=17.7500  id=13276  word='reasonable'
+  10: logit=17.6250  id=15503  word='primarily'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=23.5000  id=1550  word='high'
+   2: logit=22.1250  id=5008  word='quite'
+   3: logit=20.2500  id=7548  word='highly'
+   4: logit=20.1250  id=9073  word='excellent'
+   5: logit=19.6250  id=12040  word='relatively'
+   6: logit=19.3750  id=8789  word='generally'
+   7: logit=19.2500  id=1602  word='very'
+   8: logit=18.2500  id=1661  word='good'
+   9: logit=17.5000  id=21628  word='rated'
+  10: logit=17.5000  id=14138  word='fairly'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=23.1250  id=1550  word='high'
+   2: logit=22.2500  id=5008  word='quite'
+   3: logit=20.6250  id=12040  word='relatively'
+   4: logit=20.5000  id=8789  word='generally'
+   5: logit=19.7500  id=7548  word='highly'
+   6: logit=19.5000  id=9073  word='excellent'
+   7: logit=19.1250  id=1661  word='good'
+   8: logit=18.6250  id=1602  word='very'
+   9: logit=18.1250  id=14138  word='fairly'
+  10: logit=17.5000  id=21628  word='rated'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=23.6250  id=1550  word='high'
+   2: logit=22.3750  id=5008  word='quite'
+   3: logit=20.3750  id=7548  word='highly'
+   4: logit=20.3750  id=9073  word='excellent'
+   5: logit=20.0000  id=8789  word='generally'
+   6: logit=20.0000  id=12040  word='relatively'
+   7: logit=19.7500  id=1602  word='very'
+   8: logit=18.7500  id=1661  word='good'
+   9: logit=17.8750  id=14138  word='fairly'
+  10: logit=17.7500  id=21628  word='rated'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=23.8750  id=1661  word='good'
+   2: logit=23.6250  id=5008  word='quite'
+   3: logit=23.6250  id=8789  word='generally'
+   4: logit=22.7500  id=12040  word='relatively'
+   5: logit=22.2500  id=1550  word='high'
+   6: logit=21.0000  id=57731  word='satisfactory'
+   7: logit=20.3750  id=14977  word='decent'
+   8: logit=20.3750  id=6509  word='considered'
+   9: logit=20.1250  id=14138  word='fairly'
+  10: logit=20.0000  id=21555  word='acceptable'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=24.2500  id=8789  word='generally'
+   2: logit=22.7500  id=5008  word='quite'
+   3: logit=22.5000  id=12040  word='relatively'
+   4: logit=22.3750  id=1661  word='good'
+   5: logit=21.1250  id=1550  word='high'
+   6: logit=21.1250  id=6509  word='considered'
+   7: logit=20.3750  id=57731  word='satisfactory'
+   8: logit=20.2500  id=23193  word='moderate'
+   9: logit=20.1250  id=21555  word='acceptable'
+  10: logit=20.0000  id=21628  word='rated'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=24.0000  id=5008  word='quite'
+   2: logit=23.7500  id=8789  word='generally'
+   3: logit=23.5000  id=1550  word='high'
+   4: logit=22.0000  id=12040  word='relatively'
+   5: logit=21.6250  id=1661  word='good'
+   6: logit=20.7500  id=9073  word='excellent'
+   7: logit=20.7500  id=1602  word='very'
+   8: logit=20.5000  id=6509  word='considered'
+   9: logit=20.0000  id=21628  word='rated'
+  10: logit=19.6250  id=7548  word='highly'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=20.8750  id=8789  word='generally'
+   2: logit=20.7500  id=6509  word='considered'
+   3: logit=20.0000  id=14400  word='somewhat'
+   4: logit=19.8750  id=12040  word='relatively'
+   5: logit=19.7500  id=23193  word='moderate'
+   6: logit=19.2500  id=7852  word='poor'
+   7: logit=19.1250  id=21628  word='rated'
+   8: logit=19.1250  id=3347  word='low'
+   9: logit=18.8750  id=5008  word='quite'
+  10: logit=18.3750  id=43400  word='compromised'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=21.8750  id=8789  word='generally'
+   2: logit=21.0000  id=12040  word='relatively'
+   3: logit=20.1250  id=23193  word='moderate'
+   4: logit=19.6250  id=14400  word='somewhat'
+   5: logit=19.2500  id=21555  word='acceptable'
+   6: logit=19.2500  id=1661  word='good'
+   7: logit=19.2500  id=5008  word='quite'
+   8: logit=19.2500  id=6509  word='considered'
+   9: logit=19.0000  id=69251  word='moderately'
+  10: logit=18.8750  id=21628  word='rated'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=23.8750  id=1550  word='high'
+   2: logit=22.1250  id=5008  word='quite'
+   3: logit=21.8750  id=7548  word='highly'
+   4: logit=21.6250  id=1602  word='very'
+   5: logit=21.3750  id=9073  word='excellent'
+   6: logit=20.6250  id=47198  word='exceptionally'
+   7: logit=19.0000  id=21628  word='rated'
+   8: logit=18.5000  id=8789  word='generally'
+   9: logit=18.2500  id=24364  word='exceptional'
+  10: logit=17.7500  id=42295  word='visually'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=24.5000  id=1550  word='high'
+   2: logit=23.3750  id=5008  word='quite'
+   3: logit=22.1250  id=1602  word='very'
+   4: logit=21.6250  id=7548  word='highly'
+   5: logit=21.2500  id=9073  word='excellent'
+   6: logit=20.2500  id=47198  word='exceptionally'
+   7: logit=19.5000  id=8789  word='generally'
+   8: logit=18.2500  id=21628  word='rated'
+   9: logit=18.1250  id=15978  word='impressive'
+  10: logit=18.1250  id=12040  word='relatively'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=21.2500  id=1550  word='high'
+   2: logit=20.3750  id=5008  word='quite'
+   3: logit=18.5000  id=7548  word='highly'
+   4: logit=17.1250  id=8789  word='generally'
+   5: logit=17.0000  id=42295  word='visually'
+   6: logit=16.8750  id=31592  word='artistic'
+   7: logit=16.8750  id=12040  word='relatively'
+   8: logit=16.7500  id=1602  word='very'
+   9: logit=16.7500  id=15503  word='primarily'
+  10: logit=16.6250  id=21628  word='rated'
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=24.3750  id=1550  word='high'
+   2: logit=22.8750  id=5008  word='quite'
+   3: logit=22.6250  id=1602  word='very'
+   4: logit=22.1250  id=7548  word='highly'
+   5: logit=21.3750  id=9073  word='excellent'
+   6: logit=21.1250  id=47198  word='exceptionally'
+   7: logit=19.1250  id=21628  word='rated'
+   8: logit=19.1250  id=8789  word='generally'
+   9: logit=19.0000  id=9016  word='extremely'
+  10: logit=18.8750  id=6509  word='considered'
+----------------------------------------
+
+
+APPEND
+Qwen2.5VL
+Image: 1600.BLUR.2.png
+Top-10 logits:
+24.6250 'high'
+24.3750 'quite'
+23.7500 'generally'
+23.3750 'good'
+22.3750 'very'
+22.1250 'excellent'
+22.0000 'relatively'
+21.0000 'considered'
+20.0000 'fairly'
+19.7500 'highly'
+19.7500 'rated'
+19.2500 'satisfactory'
+19.0000 'overall'
+19.0000 'of'
+18.6250 'reasonably'
+18.6250 'decent'
+18.5000 'moderate'
+18.5000 'acceptable'
+18.1250 'visually'
+18.1250 'reasonable'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=21.6250  id=23193  word='moderate'
+   2: logit=21.2500  id=8789   word='generally'
+   3: logit=21.0000  id=12040  word='relatively'
+   4: logit=20.3750  id=14400  word='somewhat'
+   5: logit=19.7500  id=14977  word='decent'
+   6: logit=19.7500  id=69251  word='moderately'
+   7: logit=19.5000  id=1661   word='good'
+   8: logit=19.1250  id=43022  word='subjective'
+   9: logit=19.1250  id=57731  word='satisfactory'
+  10: logit=19.0000  id=13276  word='reasonable'
+  11: logit=19.0000  id=21555  word='acceptable'
+  12: logit=18.8750  id=6509   word='considered'
+  13: logit=18.7500  id=15503  word='primarily'
+  14: logit=18.7500  id=21628  word='rated'
+  15: logit=18.6250  id=6624   word='fair'
+  16: logit=18.5000  id=5008   word='quite'
+  17: logit=17.7500  id=28446  word='reasonably'
+  18: logit=17.2500  id=5461   word='average'
+  19: logit=17.1250  id=14138  word='fairly'
+  20: logit=17.1250  id=3832   word='subject'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=20.2500  id=12040  word='relatively'
+   2: logit=20.1250  id=23193  word='moderate'
+   3: logit=19.7500  id=8789  word='generally'
+   4: logit=19.2500  id=6509  word='considered'
+   5: logit=18.8750  id=1661  word='good'
+   6: logit=18.3750  id=69251  word='moderately'
+   7: logit=18.3750  id=13276  word='reasonable'
+   8: logit=18.2500  id=21628  word='rated'
+   9: logit=18.2500  id=1550  word='high'
+  10: logit=17.8750  id=14977  word='decent'
+  11: logit=17.7500  id=5008  word='quite'
+  12: logit=17.6250  id=57731  word='satisfactory'
+  13: logit=17.6250  id=15503  word='primarily'
+  14: logit=17.6250  id=21555  word='acceptable'
+  15: logit=17.6250  id=14400  word='somewhat'
+  16: logit=17.5000  id=6624  word='fair'
+  17: logit=17.3750  id=28446  word='reasonably'
+  18: logit=16.8750  id=14138  word='fairly'
+  19: logit=16.5000  id=315  word='of'
+  20: logit=16.2500  id=31348  word='assessed'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=25.1250  id=5008  word='quite'
+   2: logit=24.7500  id=8789  word='generally'
+   3: logit=24.5000  id=1661  word='good'
+   4: logit=23.3750  id=12040  word='relatively'
+   5: logit=23.2500  id=1550  word='high'
+   6: logit=21.7500  id=6509  word='considered'
+   7: logit=21.0000  id=14138  word='fairly'
+   8: logit=20.7500  id=57731  word='satisfactory'
+   9: logit=20.7500  id=9073  word='excellent'
+  10: logit=20.6250  id=1602  word='very'
+  11: logit=20.6250  id=21628  word='rated'
+  12: logit=20.2500  id=14977  word='decent'
+  13: logit=20.0000  id=21555  word='acceptable'
+  14: logit=19.8750  id=28446  word='reasonably'
+  15: logit=19.7500  id=23193  word='moderate'
+  16: logit=19.2500  id=8084  word='overall'
+  17: logit=19.2500  id=13276  word='reasonable'
+  18: logit=19.2500  id=69251  word='moderately'
+  19: logit=18.6250  id=6624  word='fair'
+  20: logit=18.5000  id=7548  word='highly'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=23.6250  id=8789  word='generally'
+   2: logit=23.0000  id=12040  word='relatively'
+   3: logit=23.0000  id=1661  word='good'
+   4: logit=22.3750  id=5008  word='quite'
+   5: logit=21.5000  id=1550  word='high'
+   6: logit=21.2500  id=23193  word='moderate'
+   7: logit=21.2500  id=6509  word='considered'
+   8: logit=21.0000  id=57731  word='satisfactory'
+   9: logit=20.8750  id=14977  word='decent'
+  10: logit=20.8750  id=13276  word='reasonable'
+  11: logit=20.7500  id=21555  word='acceptable'
+  12: logit=20.2500  id=28446  word='reasonably'
+  13: logit=20.0000  id=14138  word='fairly'
+  14: logit=19.7500  id=69251  word='moderately'
+  15: logit=19.7500  id=6624  word='fair'
+  16: logit=19.5000  id=21628  word='rated'
+  17: logit=18.7500  id=8084  word='overall'
+  18: logit=17.8750  id=315  word='of'
+  19: logit=17.7500  id=24636  word='deemed'
+  20: logit=17.6250  id=15503  word='primarily'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=23.5000  id=5008  word='quite'
+   2: logit=23.3750  id=3347  word='low'
+   3: logit=22.7500  id=7852  word='poor'
+   4: logit=21.5000  id=12040 word='relatively'
+   5: logit=21.3750  id=8789  word='generally'
+   6: logit=21.0000  id=1602  word='very'
+   7: logit=19.7500  id=6509  word='considered'
+   8: logit=19.2500  id=4751  word='rather'
+   9: logit=18.5000  id=21628 word='rated'
+  10: logit=18.1250  id=14138 word='fairly'
+  11: logit=17.8750  id=11941 word='significantly'
+  12: logit=17.5000  id=43400 word='compromised'
+  13: logit=17.3750  id=34046 word='notably'
+  14: logit=17.3750  id=14400 word='somewhat'
+  15: logit=17.1250  id=537   word='not'
+  16: logit=16.7500  id=9016  word='extremely'
+  17: logit=16.6250  id=1186  word='sub'
+  18: logit=16.0000  id=32352 word='considerably'
+  19: logit=16.0000  id=23193 word='moderate'
+  20: logit=15.8750  id=12041 word='Low'
+---------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=21.7500  id=12040  word='relatively'
+   2: logit=21.1250  id=23193  word='moderate'
+   3: logit=20.6250  id=8789  word='generally'
+   4: logit=20.3750  id=14400  word='somewhat'
+   5: logit=19.8750  id=6509  word='considered'
+   6: logit=19.3750  id=21555  word='acceptable'
+   7: logit=19.3750  id=69251  word='moderately'
+   8: logit=19.1250  id=15503  word='primarily'
+   9: logit=19.1250  id=1661  word='good'
+  10: logit=19.1250  id=13276  word='reasonable'
+  11: logit=18.8750  id=5008  word='quite'
+  12: logit=18.8750  id=57731  word='satisfactory'
+  13: logit=18.8750  id=21628  word='rated'
+  14: logit=18.7500  id=14977  word='decent'
+  15: logit=18.5000  id=6624  word='fair'
+  16: logit=18.1250  id=28446  word='reasonably'
+  17: logit=17.7500  id=43022  word='subjective'
+  18: logit=17.5000  id=14138  word='fairly'
+  19: logit=17.3750  id=537  word='not'
+  20: logit=17.2500  id=1550  word='high'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=24.6250  id=5008  word='quite'
+   2: logit=24.5000  id=8789  word='generally'
+   3: logit=24.0000  id=1550  word='high'
+   4: logit=23.7500  id=12040  word='relatively'
+   5: logit=23.6250  id=1661  word='good'
+   6: logit=21.1250  id=14138  word='fairly'
+   7: logit=20.8750  id=1602  word='very'
+   8: logit=20.6250  id=28446  word='reasonably'
+   9: logit=20.3750  id=14977  word='decent'
+  10: logit=20.2500  id=9073  word='excellent'
+  11: logit=20.2500  id=57731  word='satisfactory'
+  12: logit=20.1250  id=6509  word='considered'
+  13: logit=19.8750  id=13276  word='reasonable'
+  14: logit=19.8750  id=21555  word='acceptable'
+  15: logit=19.5000  id=7548  word='highly'
+  16: logit=19.2500  id=69251  word='moderately'
+  17: logit=19.1250  id=23193  word='moderate'
+  18: logit=19.1250  id=21628  word='rated'
+  19: logit=18.7500  id=6624  word='fair'
+  20: logit=18.6250  id=15503  word='primarily'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=23.7500  id=5008  word='quite'
+   2: logit=23.7500  id=1550  word='high'
+   3: logit=23.3750  id=8789  word='generally'
+   4: logit=22.0000  id=1661  word='good'
+   5: logit=21.6250  id=12040 word='relatively'
+   6: logit=21.2500  id=9073  word='excellent'
+   7: logit=20.8750  id=6509  word='considered'
+   8: logit=20.8750  id=1602  word='very'
+   9: logit=20.0000  id=21628 word='rated'
+  10: logit=19.7500  id=7548  word='highly'
+  11: logit=19.0000  id=14138 word='fairly'
+  12: logit=18.3750  id=31348 word='assessed'
+  13: logit=18.3750  id=57731 word='satisfactory'
+  14: logit=18.2500  id=8084  word='overall'
+  15: logit=18.0000  id=14977 word='decent'
+  16: logit=17.8750  id=15503 word='primarily'
+  17: logit=17.8750  id=28446 word='reasonably'
+  18: logit=17.8750  id=23193 word='moderate'
+  19: logit=17.6250  id=46804 word='predominantly'
+  20: logit=17.6250  id=21555 word='acceptable'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=20.0000  id=12040  word='relatively'
+   2: logit=19.8750  id=23193  word='moderate'
+   3: logit=19.5000  id=8789  word='generally'
+   4: logit=19.2500  id=14400  word='somewhat'
+   5: logit=18.2500  id=69251  word='moderately'
+   6: logit=17.8750  id=6509  word='considered'
+   7: logit=17.8750  id=1661  word='good'
+   8: logit=17.7500  id=5008  word='quite'
+   9: logit=17.7500  id=21555  word='acceptable'
+  10: logit=17.6250  id=13276  word='reasonable'
+  11: logit=17.6250  id=21628  word='rated'
+  12: logit=17.5000  id=15503  word='primarily'
+  13: logit=17.5000  id=43022  word='subjective'
+  14: logit=17.3750  id=57731  word='satisfactory'
+  15: logit=17.3750  id=6624  word='fair'
+  16: logit=17.2500  id=1550  word='high'
+  17: logit=16.8750  id=14977  word='decent'
+  18: logit=16.8750  id=11495  word='affected'
+  19: logit=16.7500  id=43400  word='compromised'
+  20: logit=16.6250  id=28446  word='reasonably'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=20.5000  id=12040  word='relatively'
+   2: logit=20.5000  id=1550  word='high'
+   3: logit=20.1250  id=8789  word='generally'
+   4: logit=19.8750  id=5008  word='quite'
+   5: logit=19.0000  id=1661  word='good'
+   6: logit=18.7500  id=23193  word='moderate'
+   7: logit=18.5000  id=14400  word='somewhat'
+   8: logit=18.3750  id=69251  word='moderately'
+   9: logit=17.7500  id=13276  word='reasonable'
+  10: logit=17.6250  id=15503  word='primarily'
+  11: logit=17.5000  id=14138  word='fairly'
+  12: logit=17.3750  id=14977  word='decent'
+  13: logit=17.3750  id=21555  word='acceptable'
+  14: logit=17.3750  id=57731  word='satisfactory'
+  15: logit=17.3750  id=28446  word='reasonably'
+  16: logit=17.2500  id=7548  word='highly'
+  17: logit=17.1250  id=21628  word='rated'
+  18: logit=17.0000  id=6509  word='considered'
+  19: logit=16.8750  id=6624  word='fair'
+  20: logit=16.7500  id=46804  word='predominantly'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=23.5000  id=1550  word='high'
+   2: logit=22.1250  id=5008  word='quite'
+   3: logit=20.2500  id=7548  word='highly'
+   4: logit=20.1250  id=9073  word='excellent'
+   5: logit=19.6250  id=12040  word='relatively'
+   6: logit=19.3750  id=8789  word='generally'
+   7: logit=19.2500  id=1602  word='very'
+   8: logit=18.2500  id=1661  word='good'
+   9: logit=17.5000  id=21628  word='rated'
+  10: logit=17.5000  id=14138  word='fairly'
+  11: logit=17.3750  id=47198  word='exceptionally'
+  12: logit=17.0000  id=6509  word='considered'
+  13: logit=16.8750  id=315  word='of'
+  14: logit=16.8750  id=15978  word='impressive'
+  15: logit=16.7500  id=15503  word='primarily'
+  16: logit=16.6250  id=31348  word='assessed'
+  17: logit=16.6250  id=46804  word='predominantly'
+  18: logit=16.6250  id=42295  word='visually'
+  19: logit=16.5000  id=73112  word='commend'
+  20: logit=16.2500  id=24364  word='exceptional'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=23.1250  id=1550  word='high'
+   2: logit=22.2500  id=5008  word='quite'
+   3: logit=20.6250  id=12040  word='relatively'
+   4: logit=20.5000  id=8789  word='generally'
+   5: logit=19.7500  id=7548  word='highly'
+   6: logit=19.5000  id=9073  word='excellent'
+   7: logit=19.1250  id=1661  word='good'
+   8: logit=18.6250  id=1602  word='very'
+   9: logit=18.1250  id=14138  word='fairly'
+  10: logit=17.5000  id=21628  word='rated'
+  11: logit=17.3750  id=15503  word='primarily'
+  12: logit=17.3750  id=6509  word='considered'
+  13: logit=17.2500  id=28446  word='reasonably'
+  14: logit=17.1250  id=46804  word='predominantly'
+  15: logit=17.1250  id=69251  word='moderately'
+  16: logit=16.7500  id=315  word='of'
+  17: logit=16.6250  id=57731  word='satisfactory'
+  18: logit=16.6250  id=13771  word='largely'
+  19: logit=16.6250  id=23193  word='moderate'
+  20: logit=16.6250  id=13276  word='reasonable'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=23.6250  id=1550  word='high'
+   2: logit=22.3750  id=5008  word='quite'
+   3: logit=20.3750  id=7548  word='highly'
+   4: logit=20.3750  id=9073  word='excellent'
+   5: logit=20.0000  id=12040  word='relatively'
+   6: logit=20.0000  id=8789  word='generally'
+   7: logit=19.7500  id=1602  word='very'
+   8: logit=18.7500  id=1661  word='good'
+   9: logit=17.8750  id=14138  word='fairly'
+  10: logit=17.7500  id=21628  word='rated'
+  11: logit=17.5000  id=47198  word='exceptionally'
+  12: logit=17.3750  id=6509  word='considered'
+  13: logit=17.0000  id=315  word='of'
+  14: logit=17.0000  id=15503  word='primarily'
+  15: logit=16.8750  id=46804  word='predominantly'
+  16: logit=16.8750  id=31348  word='assessed'
+  17: logit=16.8750  id=15978  word='impressive'
+  18: logit=16.7500  id=73112  word='commend'
+  19: logit=16.6250  id=28446  word='reasonably'
+  20: logit=16.6250  id=42295  word='visually'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=23.8750  id=1661  word='good'
+   2: logit=23.6250  id=5008  word='quite'
+   3: logit=23.6250  id=8789  word='generally'
+   4: logit=22.7500  id=12040 word='relatively'
+   5: logit=22.2500  id=1550  word='high'
+   6: logit=21.0000  id=57731 word='satisfactory'
+   7: logit=20.3750  id=14977 word='decent'
+   8: logit=20.3750  id=6509  word='considered'
+   9: logit=20.1250  id=14138 word='fairly'
+  10: logit=20.0000  id=21555 word='acceptable'
+  11: logit=19.8750  id=23193 word='moderate'
+  12: logit=19.7500  id=28446 word='reasonably'
+  13: logit=19.7500  id=13276 word='reasonable'
+  14: logit=19.6250  id=21628 word='rated'
+  15: logit=19.2500  id=9073  word='excellent'
+  16: logit=19.1250  id=8084  word='overall'
+  17: logit=19.1250  id=1602  word='very'
+  18: logit=19.0000  id=69251 word='moderately'
+  19: logit=18.7500  id=6624  word='fair'
+  20: logit=18.1250  id=7548  word='highly'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=24.2500  id=8789  word='generally'
+   2: logit=22.7500  id=5008  word='quite'
+   3: logit=22.5000  id=12040  word='relatively'
+   4: logit=22.3750  id=1661  word='good'
+   5: logit=21.1250  id=6509  word='considered'
+   6: logit=21.1250  id=1550  word='high'
+   7: logit=20.3750  id=57731  word='satisfactory'
+   8: logit=20.2500  id=23193  word='moderate'
+   9: logit=20.1250  id=21555  word='acceptable'
+  10: logit=20.0000  id=21628  word='rated'
+  11: logit=20.0000  id=14977  word='decent'
+  12: logit=19.3750  id=14138  word='fairly'
+  13: logit=19.2500  id=69251  word='moderately'
+  14: logit=19.2500  id=13276  word='reasonable'
+  15: logit=19.1250  id=28446  word='reasonably'
+  16: logit=18.6250  id=8084  word='overall'
+  17: logit=18.1250  id=6624  word='fair'
+  18: logit=18.0000  id=9073  word='excellent'
+  19: logit=18.0000  id=15503  word='primarily'
+  20: logit=17.6250  id=46804  word='predominantly'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=24.0000  id=5008  word='quite'
+   2: logit=23.7500  id=8789  word='generally'
+   3: logit=23.5000  id=1550  word='high'
+   4: logit=22.0000  id=12040  word='relatively'
+   5: logit=21.6250  id=1661  word='good'
+   6: logit=20.7500  id=1602  word='very'
+   7: logit=20.7500  id=9073  word='excellent'
+   8: logit=20.5000  id=6509  word='considered'
+   9: logit=20.0000  id=21628  word='rated'
+  10: logit=19.6250  id=7548  word='highly'
+  11: logit=19.2500  id=14138  word='fairly'
+  12: logit=18.6250  id=8084  word='overall'
+  13: logit=18.3750  id=28446  word='reasonably'
+  14: logit=18.3750  id=57731  word='satisfactory'
+  15: logit=18.2500  id=23193  word='moderate'
+  16: logit=18.1250  id=14977  word='decent'
+  17: logit=18.1250  id=31348  word='assessed'
+  18: logit=18.0000  id=69251  word='moderately'
+  19: logit=17.8750  id=21555  word='acceptable'
+  20: logit=17.7500  id=46804  word='predominantly'
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=20.8750  id=8789  word='generally'
+   2: logit=20.7500  id=6509  word='considered'
+   3: logit=20.0000  id=14400  word='somewhat'
+   4: logit=19.8750  id=12040  word='relatively'
+   5: logit=19.7500  id=23193  word='moderate'
+   6: logit=19.2500  id=7852  word='poor'
+   7: logit=19.1250  id=21628  word='rated'
+   8: logit=19.1250  id=3347  word='low'
+   9: logit=18.8750  id=5008  word='quite'
+  10: logit=18.3750  id=43400  word='compromised'
+  11: logit=18.2500  id=537  word='not'
+  12: logit=17.7500  id=69251  word='moderately'
+  13: logit=17.6250  id=11495  word='affected'
+  14: logit=17.5000  id=21555  word='acceptable'
+  15: logit=17.1250  id=6624  word='fair'
+  16: logit=17.0000  id=43022  word='subjective'
+  17: logit=17.0000  id=1186  word='sub'
+  18: logit=16.7500  id=5461  word='average'
+  19: logit=16.5000  id=4751  word='rather'
+  20: logit=16.5000  id=14138  word='fairly'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=21.8750  id=8789  word='generally'
+   2: logit=21.0000  id=12040  word='relatively'
+   3: logit=20.1250  id=23193  word='moderate'
+   4: logit=19.6250  id=14400  word='somewhat'
+   5: logit=19.2500  id=1661  word='good'
+   6: logit=19.2500  id=6509  word='considered'
+   7: logit=19.2500  id=21555  word='acceptable'
+   8: logit=19.2500  id=5008  word='quite'
+   9: logit=19.0000  id=69251  word='moderately'
+  10: logit=18.8750  id=21628  word='rated'
+  11: logit=18.6250  id=57731  word='satisfactory'
+  12: logit=18.5000  id=13276  word='reasonable'
+  13: logit=18.2500  id=43400  word='compromised'
+  14: logit=18.1250  id=14977  word='decent'
+  15: logit=17.8750  id=6624  word='fair'
+  16: logit=17.8750  id=11495  word='affected'
+  17: logit=17.5000  id=28446  word='reasonably'
+  18: logit=17.1250  id=8084  word='overall'
+  19: logit=17.0000  id=14138  word='fairly'
+  20: logit=17.0000  id=1550  word='high'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=23.8750  id=1550  word='high'
+   2: logit=22.1250  id=5008  word='quite'
+   3: logit=21.8750  id=7548  word='highly'
+   4: logit=21.6250  id=1602  word='very'
+   5: logit=21.3750  id=9073  word='excellent'
+   6: logit=20.6250  id=47198  word='exceptionally'
+   7: logit=19.0000  id=21628  word='rated'
+   8: logit=18.5000  id=8789  word='generally'
+   9: logit=18.2500  id=24364  word='exceptional'
+  10: logit=17.7500  id=42295  word='visually'
+  11: logit=17.6250  id=6509  word='considered'
+  12: logit=17.3750  id=9016  word='extremely'
+  13: logit=17.3750  id=15978  word='impressive'
+  14: logit=17.1250  id=315  word='of'
+  15: logit=16.7500  id=11892  word='high'
+  16: logit=16.7500  id=12040  word='relatively'
+  17: logit=16.6250  id=36766  word='Excellent'
+  18: logit=16.6250  id=31348  word='assessed'
+  19: logit=16.5000  id=18781  word='outstanding'
+  20: logit=16.1250  id=5124  word='High'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=24.5000  id=1550  word='high'
+   2: logit=23.3750  id=5008  word='quite'
+   3: logit=22.1250  id=1602  word='very'
+   4: logit=21.6250  id=7548  word='highly'
+   5: logit=21.2500  id=9073  word='excellent'
+   6: logit=20.2500  id=47198 word='exceptionally'
+   7: logit=19.5000  id=8789  word='generally'
+   8: logit=18.2500  id=21628 word='rated'
+   9: logit=18.1250  id=12040 word='relatively'
+  10: logit=18.1250  id=15978 word='impressive'
+  11: logit=17.7500  id=24364 word='exceptional'
+  12: logit=17.6250  id=6509  word='considered'
+  13: logit=17.3750  id=11892 word='high'
+  14: logit=17.2500  id=9016  word='extremely'
+  15: logit=16.8750  id=315   word='of'
+  16: logit=16.7500  id=36766 word='Excellent'
+  17: logit=16.7500  id=5124  word='High'
+  18: logit=16.5000  id=42295 word='visually'
+  19: logit=16.5000  id=34046 word='notably'
+  20: logit=16.2500  id=31348 word='assessed'
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=21.2500  id=1550  word='high'
+   2: logit=20.3750  id=5008  word='quite'
+   3: logit=18.5000  id=7548  word='highly'
+   4: logit=17.1250  id=8789  word='generally'
+   5: logit=17.0000  id=42295  word='visually'
+   6: logit=16.8750  id=31592  word='artistic'
+   7: logit=16.8750  id=12040  word='relatively'
+   8: logit=16.7500  id=1602  word='very'
+   9: logit=16.7500  id=15503  word='primarily'
+  10: logit=16.6250  id=21628  word='rated'
+  11: logit=16.5000  id=9073  word='excellent'
+  12: logit=16.1250  id=43022  word='subjective'
+  13: logit=15.6875  id=1661  word='good'
+  14: logit=15.5625  id=46804  word='predominantly'
+  15: logit=15.4375  id=6509  word='considered'
+  16: logit=15.3125  id=14138  word='fairly'
+  17: logit=15.1875  id=31871  word='characterized'
+  18: logit=14.8750  id=32976  word='vibrant'
+  19: logit=14.5000  id=3832  word='subject'
+  20: logit=14.2500  id=47198  word='exceptionally'
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=24.3750  id=1550  word='high'
+   2: logit=22.8750  id=5008  word='quite'
+   3: logit=22.6250  id=1602  word='very'
+   4: logit=22.1250  id=7548  word='highly'
+   5: logit=21.3750  id=9073  word='excellent'
+   6: logit=21.1250  id=47198  word='exceptionally'
+   7: logit=19.1250  id=21628  word='rated'
+   8: logit=19.1250  id=8789  word='generally'
+   9: logit=19.0000  id=9016  word='extremely'
+  10: logit=18.8750  id=6509  word='considered'
+  11: logit=18.5000  id=24364  word='exceptional'
+  12: logit=18.5000  id=15978  word='impressive'
+  13: logit=18.5000  id=12040  word='relatively'
+  14: logit=18.2500  id=315  word='of'
+  15: logit=17.3750  id=31348  word='assessed'
+  16: logit=17.0000  id=48623  word='remarkably'
+  17: logit=16.7500  id=36766  word='Excellent'
+  18: logit=16.6250  id=34046  word='notably'
+  19: logit=16.6250  id=18781  word='outstanding'
+  20: logit=16.5000  id=76281  word='exemplary'
+
+----------------------------------------
+
+mPLUGOwl3
+
+Image: 1600.BLUR.2.png
+Top-10 logits:
+   1: logit=22.2500  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=16.8750  id=1550  word='high'
+   4: logit=16.3750  id=2797  word='clear'
+   5: logit=16.1250  id=3873  word='bad'
+   6: logit=15.7500  id=3347  word='low'
+   7: logit=14.5000  id=13382 word='accurate'
+   8: logit=13.8125  id=9073  word='excellent'
+   9: logit=13.0625  id=17232 word='sharp'
+  10: logit=13.0000  id=11    word=','
+  11: logit=12.8125  id=1632  word='well'
+  12: logit=12.8125  id=13276 word='reasonable'
+  13: logit=12.7500  id=1602  word='very'
+  14: logit=12.5000  id=21555 word='acceptable'
+  15: logit=12.2500  id=99055 word='blurry'
+  16: logit=12.1250  id=25489 word='realistic'
+  17: logit=12.0625  id=14888 word='strange'
+  18: logit=11.8125  id=57731 word='satisfactory'
+  19: logit=11.6875  id=58425 word='unreasonable'
+  20: logit=11.6250  id=4363  word='likely'
+----------------------------------------
+Image: aaa.jpg
+Top-10 logits:
+   1: logit=24.3750  id=7852  word='poor'
+   2: logit=20.5000  id=3347  word='low'
+   3: logit=18.3750  id=1661  word='good'
+   4: logit=18.3750  id=3873  word='bad'
+   5: logit=15.8125  id=99055 word='blurry'
+   6: logit=15.2500  id=1550  word='high'
+   7: logit=15.0000  id=11    word=','
+   8: logit=14.8750  id=6975  word='uns'
+   9: logit=14.7500  id=1602  word='very'
+  10: logit=14.1250  id=58425 word='unreasonable'
+  11: logit=13.9375  id=49404 word='inaccurate'
+  12: logit=13.8125  id=2797  word='clear'
+  13: logit=13.6250  id=24416 word='unclear'
+  14: logit=13.3750  id=15386 word='severe'
+  15: logit=13.1250  id=30455 word='poorly'
+  16: logit=13.0000  id=14888 word='strange'
+  17: logit=12.8125  id=52733 word='fuzzy'
+  18: logit=12.7500  id=5000  word='difficult'
+  19: logit=12.6250  id=37179 word='inferior'
+  20: logit=12.5000  id=6001  word='serious'
+----------------------------------------
+Image: aerial_city.BLUR.2.png
+Top-10 logits:
+   1: logit=22.7500  id=1661  word='good'
+   2: logit=21.0000  id=7852  word='poor'
+   3: logit=17.8750  id=2797  word='clear'
+   4: logit=17.7500  id=1550  word='high'
+   5: logit=16.8750  id=3347  word='low'
+   6: logit=16.3750  id=3873  word='bad'
+   7: logit=15.8125  id=13382  word='accurate'
+   8: logit=14.2500  id=9073  word='excellent'
+   9: logit=14.1250  id=17232  word='sharp'
+  10: logit=13.6250  id=1632  word='well'
+  11: logit=13.3750  id=99055  word='blurry'
+  12: logit=13.0625  id=13276  word='reasonable'
+  13: logit=13.0000  id=25489  word='realistic'
+  14: logit=12.4375  id=24416  word='unclear'
+  15: logit=12.3750  id=23560  word='precise'
+  16: logit=12.2500  id=58425  word='unreasonable'
+  17: logit=12.1875  id=14888  word='strange'
+  18: logit=12.0000  id=21555  word='acceptable'
+  19: logit=11.8750  id=3265  word='close'
+  20: logit=11.8125  id=4363  word='likely'
+----------------------------------------
+Image: bbb.jpg
+Top-10 logits:
+   1: logit=22.3750  id=1661  word='good'
+   2: logit=21.2500  id=7852  word='poor'
+   3: logit=17.6250  id=1550  word='high'
+   4: logit=17.6250  id=2797  word='clear'
+   5: logit=17.1250  id=3347  word='low'
+   6: logit=16.3750  id=3873  word='bad'
+   7: logit=14.7500  id=13382  word='accurate'
+   8: logit=14.7500  id=17232  word='sharp'
+   9: logit=14.3750  id=9073  word='excellent'
+  10: logit=14.0625  id=13276  word='reasonable'
+  11: logit=13.7500  id=99055  word='blurry'
+  12: logit=13.6875  id=25489  word='realistic'
+  13: logit=13.5000  id=1632  word='well'
+  14: logit=13.4375  id=21555  word='acceptable'
+  15: logit=13.1250  id=14888  word='strange'
+  16: logit=13.0000  id=11  word=','
+  17: logit=12.9375  id=57731  word='satisfactory'
+  18: logit=12.8750  id=58425  word='unreasonable'
+  19: logit=12.7500  id=14977  word='decent'
+  20: logit=12.6875  id=24416  word='unclear'
+----------------------------------------
+Image: boston.BLUR.3.png
+Top-10 logits:
+   1: logit=21.6250  id=7852  word='poor'
+   2: logit=21.6250  id=1661  word='good'
+   3: logit=17.7500  id=3347  word='low'
+   4: logit=17.2500  id=2797  word='clear'
+   5: logit=17.0000  id=1550  word='high'
+   6: logit=16.6250  id=3873  word='bad'
+   7: logit=15.0000  id=13382  word='accurate'
+   8: logit=14.3750  id=99055  word='blurry'
+   9: logit=14.0000  id=17232  word='sharp'
+  10: logit=13.5625  id=9073  word='excellent'
+  11: logit=13.3750  id=14888  word='strange'
+  12: logit=13.2500  id=24416  word='unclear'
+  13: logit=13.1250  id=13276  word='reasonable'
+  14: logit=12.8750  id=58425  word='unreasonable'
+  15: logit=12.6250  id=25489  word='realistic'
+  16: logit=12.5625  id=21555  word='acceptable'
+  17: logit=12.5625  id=49404  word='inaccurate'
+  18: logit=12.4375  id=1632  word='well'
+  19: logit=12.1250  id=52733  word='fuzzy'
+  20: logit=12.1250  id=5461  word='average'
+----------------------------------------
+Image: ccc.jpg
+Top-10 logits:
+   1: logit=24.2500  id=7852  word='poor'
+   2: logit=20.5000  id=3347  word='low'
+   3: logit=19.3750  id=3873  word='bad'
+   4: logit=16.7500  id=1661  word='good'
+   5: logit=16.5000  id=11    word=','
+   6: logit=16.2500  id=1602  word='very'
+   7: logit=15.6250  id=1550  word='high'
+   8: logit=15.5625  id=99055 word='blurry'
+   9: logit=15.4375  id=6975  word='uns'
+  10: logit=14.8125  id=24416 word='unclear'
+  11: logit=14.3750  id=5000  word='difficult'
+  12: logit=14.3750  id=15386 word='severe'
+  13: logit=14.0625  id=9016  word='extremely'
+  14: logit=14.0625  id=49404 word='inaccurate'
+  15: logit=14.0625  id=30455 word='poorly'
+  16: logit=13.5625  id=37179 word='inferior'
+  17: logit=13.5000  id=34933 word='problematic'
+  18: logit=13.5000  id=6001  word='serious'
+  19: logit=13.4375  id=58425 word='unreasonable'
+  20: logit=13.4375  id=52733 word='fuzzy'
+----------------------------------------
+Image: eee.jpg
+Top-10 logits:
+   1: logit=21.7500  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=19.2500  id=1550  word='high'
+   4: logit=18.1250  id=2797  word='clear'
+   5: logit=17.7500  id=3347  word='low'
+   6: logit=15.7500  id=3873  word='bad'
+   7: logit=15.3125  id=13382  word='accurate'
+   8: logit=14.9375  id=17232  word='sharp'
+   9: logit=14.1875  id=13276  word='reasonable'
+  10: logit=13.8750  id=9073  word='excellent'
+  11: logit=13.6875  id=99055  word='blurry'
+  12: logit=13.5000  id=25489  word='realistic'
+  13: logit=13.5000  id=1632  word='well'
+  14: logit=13.0000  id=24416  word='unclear'
+  15: logit=12.8750  id=1615  word='mon'
+  16: logit=12.5625  id=14888  word='strange'
+  17: logit=12.5625  id=21555  word='acceptable'
+  18: logit=12.4375  id=9080  word='rich'
+  19: logit=12.4375  id=23560  word='precise'
+  20: logit=12.2500  id=14977  word='decent'
+----------------------------------------
+Image: fff.jpg
+Top-10 logits:
+   1: logit=23.7500  id=1661  word='good'
+   2: logit=21.0000  id=7852  word='poor'
+   3: logit=20.1250  id=1550  word='high'
+   4: logit=18.8750  id=2797  word='clear'
+   5: logit=17.1250  id=3347  word='low'
+   6: logit=16.5000  id=3873  word='bad'
+   7: logit=15.8750  id=13382  word='accurate'
+   8: logit=15.8125  id=17232  word='sharp'
+   9: logit=15.3125  id=9073  word='excellent'
+  10: logit=14.7500  id=13276  word='reasonable'
+  11: logit=14.5000  id=1632  word='well'
+  12: logit=14.1875  id=25489  word='realistic'
+  13: logit=13.9375  id=99055  word='blurry'
+  14: logit=13.8750  id=11  word=','
+  15: logit=13.6875  id=57731  word='satisfactory'
+  16: logit=13.6875  id=21555  word='acceptable'
+  17: logit=13.6250  id=14977  word='decent'
+  18: logit=13.1875  id=24416  word='unclear'
+  19: logit=13.0625  id=4363  word='likely'
+  20: logit=12.9375  id=2989  word='important'
+----------------------------------------
+Image: img10.bmp
+Top-10 logits:
+   1: logit=23.6250  id=1661  word='good'
+   2: logit=19.7500  id=1550  word='high'
+   3: logit=19.6250  id=7852  word='poor'
+   4: logit=18.3750  id=2797  word='clear'
+   5: logit=15.7500  id=13382 word='accurate'
+   6: logit=15.2500  id=17232 word='sharp'
+   7: logit=15.1875  id=9073  word='excellent'
+   8: logit=15.0625  id=3873  word='bad'
+   9: logit=14.9375  id=3347  word='low'
+  10: logit=14.3750  id=1632  word='well'
+  11: logit=14.1875  id=25489 word='realistic'
+  12: logit=14.0625  id=11    word=','
+  13: logit=13.0625  id=57731 word='satisfactory'
+  14: logit=13.0000  id=13276 word='reasonable'
+  15: logit=12.6875  id=99055 word='blurry'
+  16: logit=12.6250  id=21555 word='acceptable'
+  17: logit=12.6250  id=14977 word='decent'
+  18: logit=12.5000  id=3265  word='close'
+  19: logit=12.5000  id=4363  word='likely'
+  20: logit=12.4375  id=23560 word='precise'
+----------------------------------------
+Image: img11.bmp
+Top-10 logits:
+   1: logit=25.0000  id=7852  word='poor'
+   2: logit=20.3750  id=3347  word='low'
+   3: logit=19.0000  id=3873  word='bad'
+   4: logit=18.5000  id=1661  word='good'
+   5: logit=16.3750  id=1602  word='very'
+   6: logit=15.3125  id=6975  word='uns'
+   7: logit=14.8750  id=99055  word='blurry'
+   8: logit=14.4375  id=11  word=','
+   9: logit=14.4375  id=1550  word='high'
+  10: logit=14.0000  id=49404  word='inaccurate'
+  11: logit=13.7500  id=58425  word='unreasonable'
+  12: logit=13.5000  id=2797  word='clear'
+  13: logit=13.3750  id=24416  word='unclear'
+  14: logit=12.9375  id=52733  word='fuzzy'
+  15: logit=12.8750  id=9073  word='excellent'
+  16: logit=12.8125  id=30455  word='poorly'
+  17: logit=12.7500  id=37179  word='inferior'
+  18: logit=12.7500  id=14888  word='strange'
+  19: logit=12.6875  id=67380  word='mediocre'
+  20: logit=12.5625  id=15386  word='severe'
+----------------------------------------
+Image: img12.bmp
+Top-10 logits:
+   1: logit=21.8750  id=1661  word='good'
+   2: logit=21.1250  id=7852  word='poor'
+   3: logit=17.2500  id=2797  word='clear'
+   4: logit=16.6250  id=1550  word='high'
+   5: logit=16.3750  id=3873  word='bad'
+   6: logit=16.3750  id=3347  word='low'
+   7: logit=15.1250  id=13382  word='accurate'
+   8: logit=13.5625  id=25489  word='realistic'
+   9: logit=13.5625  id=17232  word='sharp'
+  10: logit=13.5000  id=14888  word='strange'
+  11: logit=13.3125  id=99055  word='blurry'
+  12: logit=13.2500  id=13276  word='reasonable'
+  13: logit=13.2500  id=9073  word='excellent'
+  14: logit=12.6875  id=1632  word='well'
+  15: logit=12.4375  id=58425  word='unreasonable'
+  16: logit=12.4375  id=11  word=','
+  17: logit=12.2500  id=24416  word='unclear'
+  18: logit=12.0000  id=1602  word='very'
+  19: logit=11.8750  id=3265  word='close'
+  20: logit=11.8125  id=21555  word='acceptable'
+----------------------------------------
+Image: img13.bmp
+Top-10 logits:
+   1: logit=23.3750  id=1661  word='good'
+   2: logit=20.3750  id=7852  word='poor'
+   3: logit=20.0000  id=1550  word='high'
+   4: logit=18.6250  id=2797  word='clear'
+   5: logit=15.8125  id=13382  word='accurate'
+   6: logit=15.8125  id=3347  word='low'
+   7: logit=15.8125  id=3873  word='bad'
+   8: logit=15.1875  id=17232  word='sharp'
+   9: logit=15.0000  id=9073  word='excellent'
+  10: logit=14.5000  id=25489  word='realistic'
+  11: logit=14.5000  id=11  word=','
+  12: logit=14.0000  id=13276  word='reasonable'
+  13: logit=13.7500  id=1632  word='well'
+  14: logit=13.0000  id=3265  word='close'
+  15: logit=12.8750  id=11682  word='detailed'
+  16: logit=12.8750  id=9080  word='rich'
+  17: logit=12.7500  id=23560  word='precise'
+  18: logit=12.6875  id=21555  word='acceptable'
+  19: logit=12.6875  id=57731  word='satisfactory'
+  20: logit=12.6875  id=99055  word='blurry'
+----------------------------------------
+Image: img14.bmp
+Top-10 logits:
+   1: logit=22.7500  id=1661  word='good'
+   2: logit=20.5000  id=7852  word='poor'
+   3: logit=18.7500  id=1550  word='high'
+   4: logit=17.8750  id=2797  word='clear'
+   5: logit=15.9375  id=3873  word='bad'
+   6: logit=15.7500  id=13382  word='accurate'
+   7: logit=15.6250  id=3347  word='low'
+   8: logit=14.5000  id=17232  word='sharp'
+   9: logit=14.2500  id=25489  word='realistic'
+  10: logit=14.2500  id=9073  word='excellent'
+  11: logit=13.6875  id=11  word=','
+  12: logit=13.5000  id=1632  word='well'
+  13: logit=13.5000  id=13276  word='reasonable'
+  14: logit=12.7500  id=99055  word='blurry'
+  15: logit=12.6875  id=11682  word='detailed'
+  16: logit=12.6250  id=14888  word='strange'
+  17: logit=12.5000  id=3265  word='close'
+  18: logit=12.3750  id=23560  word='precise'
+  19: logit=12.3125  id=1602  word='very'
+  20: logit=12.1875  id=9080  word='rich'
+----------------------------------------
+Image: img15.bmp
+Top-10 logits:
+   1: logit=23.3750  id=1661  word='good'
+   2: logit=20.3750  id=7852  word='poor'
+   3: logit=20.0000  id=1550  word='high'
+   4: logit=18.6250  id=2797  word='clear'
+   5: logit=15.7500  id=13382  word='accurate'
+   6: logit=15.7500  id=3873  word='bad'
+   7: logit=15.6875  id=3347  word='low'
+   8: logit=15.1250  id=17232  word='sharp'
+   9: logit=15.0625  id=9073  word='excellent'
+  10: logit=14.6250  id=11  word=','
+  11: logit=14.5625  id=25489  word='realistic'
+  12: logit=13.8750  id=13276  word='reasonable'
+  13: logit=13.6875  id=1632  word='well'
+  14: logit=13.0625  id=3265  word='close'
+  15: logit=12.9375  id=11682  word='detailed'
+  16: logit=12.8125  id=9080  word='rich'
+  17: logit=12.6875  id=23560  word='precise'
+  18: logit=12.6875  id=99055  word='blurry'
+  19: logit=12.6875  id=57731  word='satisfactory'
+  20: logit=12.6250  id=1602  word='very'
+----------------------------------------
+Image: img5.bmp
+Top-10 logits:
+   1: logit=24.0000  id=1661  word='good'
+   2: logit=20.2500  id=1550  word='high'
+   3: logit=19.8750  id=7852  word='poor'
+   4: logit=18.7500  id=2797  word='clear'
+   5: logit=15.7500  id=13382 word='accurate'
+   6: logit=15.5625  id=9073  word='excellent'
+   7: logit=15.3125  id=17232 word='sharp'
+   8: logit=15.3125  id=3873  word='bad'
+   9: logit=14.9375  id=3347  word='low'
+  10: logit=14.6250  id=1632  word='well'
+  11: logit=14.5625  id=11    word=','
+  12: logit=13.8125  id=13276 word='reasonable'
+  13: logit=13.6250  id=25489 word='realistic'
+  14: logit=13.5000  id=57731 word='satisfactory'
+  15: logit=13.1875  id=23560 word='precise'
+  16: logit=13.1875  id=21555 word='acceptable'
+  17: logit=12.9375  id=1602  word='very'
+  18: logit=12.9375  id=3265  word='close'
+  19: logit=12.7500  id=14977 word='decent'
+  20: logit=12.6875  id=2989  word='important'
+----------------------------------------
+Image: img6.bmp
+Top-10 logits:
+   1: logit=23.0000  id=7852  word='poor'
+   2: logit=21.1250  id=1661  word='good'
+   3: logit=18.2500  id=3347  word='low'
+   4: logit=17.1250  id=3873  word='bad'
+   5: logit=16.1250  id=2797  word='clear'
+   6: logit=14.7500  id=1550  word='high'
+   7: logit=14.6875  id=13382  word='accurate'
+   8: logit=14.6250  id=99055  word='blurry'
+   9: logit=13.6250  id=9073  word='excellent'
+  10: logit=13.6250  id=1602  word='very'
+  11: logit=13.2500  id=14888  word='strange'
+  12: logit=12.8125  id=17232  word='sharp'
+  13: logit=12.7500  id=24416  word='unclear'
+  14: logit=12.5625  id=58425  word='unreasonable'
+  15: logit=12.3125  id=49404  word='inaccurate'
+  16: logit=12.1250  id=52733  word='fuzzy'
+  17: logit=12.1250  id=11  word=','
+  18: logit=12.0625  id=1632  word='well'
+  19: logit=12.0000  id=6975  word='uns'
+  20: logit=11.7500  id=25489  word='realistic'
+----------------------------------------
+Image: img7.bmp
+Top-10 logits:
+   1: logit=21.7500  id=1661  word='good'
+   2: logit=21.5000  id=7852  word='poor'
+   3: logit=16.8750  id=2797  word='clear'
+   4: logit=16.5000  id=3347  word='low'
+   5: logit=16.2500  id=3873  word='bad'
+   6: logit=15.6250  id=1550  word='high'
+   7: logit=15.0000  id=13382  word='accurate'
+   8: logit=14.0625  id=99055  word='blurry'
+   9: logit=13.5625  id=17232  word='sharp'
+  10: logit=13.3750  id=9073  word='excellent'
+  11: logit=12.9375  id=25489  word='realistic'
+  12: logit=12.7500  id=1602  word='very'
+  13: logit=12.6250  id=1632  word='well'
+  14: logit=12.6250  id=14888  word='strange'
+  15: logit=12.3750  id=24416  word='unclear'
+  16: logit=11.8750  id=13276  word='reasonable'
+  17: logit=11.7500  id=4363  word='likely'
+  18: logit=11.7500  id=57731  word='satisfactory'
+  19: logit=11.6875  id=52733  word='fuzzy'
+  20: logit=11.6250  id=11  word=','
+----------------------------------------
+Image: img8.bmp
+Top-10 logits:
+   1: logit=24.8750  id=7852  word='poor'
+   2: logit=19.7500  id=1661  word='good'
+   3: logit=19.6250  id=3347  word='low'
+   4: logit=18.7500  id=3873  word='bad'
+   5: logit=15.5000  id=1602  word='very'
+   6: logit=15.3125  id=99055  word='blurry'
+   7: logit=15.0625  id=1550  word='high'
+   8: logit=14.5000  id=6975  word='uns'
+   9: logit=14.3125  id=2797  word='clear'
+  10: logit=14.1875  id=11  word=','
+  11: logit=13.7500  id=49404  word='inaccurate'
+  12: logit=13.6875  id=13382  word='accurate'
+  13: logit=13.5625  id=58425  word='unreasonable'
+  14: logit=13.4375  id=9073  word='excellent'
+  15: logit=13.1250  id=24416  word='unclear'
+  16: logit=13.1250  id=14888  word='strange'
+  17: logit=13.0625  id=52733  word='fuzzy'
+  18: logit=12.6875  id=30455  word='poorly'
+  19: logit=12.5625  id=15386  word='severe'
+  20: logit=12.5000  id=37179  word='inferior'
+----------------------------------------
+Image: img9.bmp
+Top-10 logits:
+   1: logit=23.3750  id=7852  word='poor'
+   2: logit=21.3750  id=1661  word='good'
+   3: logit=18.2500  id=3347  word='low'
+   4: logit=17.2500  id=3873  word='bad'
+   5: logit=16.6250  id=2797  word='clear'
+   6: logit=15.3750  id=13382  word='accurate'
+   7: logit=15.3125  id=1550  word='high'
+   8: logit=15.0625  id=99055  word='blurry'
+   9: logit=13.5625  id=14888  word='strange'
+  10: logit=13.4375  id=1602  word='very'
+  11: logit=13.4375  id=9073  word='excellent'
+  12: logit=13.3750  id=58425  word='unreasonable'
+  13: logit=13.3125  id=17232  word='sharp'
+  14: logit=13.1250  id=24416  word='unclear'
+  15: logit=13.0625  id=49404  word='inaccurate'
+  16: logit=12.6875  id=6975  word='uns'
+  17: logit=12.6875  id=52733  word='fuzzy'
+  18: logit=12.4375  id=11  word=','
+  19: logit=12.2500  id=5461  word='average'
+  20: logit=12.2500  id=1632  word='well'
+----------------------------------------
+Image: midjourney_normal_170.jpg
+Top-10 logits:
+   1: logit=22.6250  id=1661  word='good'
+   2: logit=21.5000  id=7852  word='poor'
+   3: logit=17.7500  id=1550  word='high'
+   4: logit=17.7500  id=2797  word='clear'
+   5: logit=17.0000  id=3347  word='low'
+   6: logit=16.1250  id=3873  word='bad'
+   7: logit=15.0625  id=25489  word='realistic'
+   8: logit=14.8750  id=13382  word='accurate'
+   9: logit=14.8125  id=17232  word='sharp'
+  10: logit=14.4375  id=9073  word='excellent'
+  11: logit=13.8750  id=99055  word='blurry'
+  12: logit=13.8125  id=13276  word='reasonable'
+  13: logit=13.4375  id=1632  word='well'
+  14: logit=13.3750  id=14888  word='strange'
+  15: logit=13.3125  id=3265  word='close'
+  16: logit=13.1875  id=4363  word='likely'
+  17: logit=12.9375  id=1602  word='very'
+  18: logit=12.9375  id=11  word=','
+  19: logit=12.6875  id=24416  word='unclear'
+  20: logit=12.6250  id=58425  word='unreasonable'
+----------------------------------------
+Image: midjourney_normal_186.jpg
+Top-10 logits:
+   1: logit=22.1250  id=1661  word='good'
+   2: logit=21.3750  id=7852  word='poor'
+   3: logit=17.1250  id=2797  word='clear'
+   4: logit=17.0000  id=3347  word='low'
+   5: logit=16.8750  id=1550  word='high'
+   6: logit=16.0000  id=3873  word='bad'
+   7: logit=15.0000  id=25489 word='realistic'
+   8: logit=14.9375  id=13382 word='accurate'
+   9: logit=13.9375  id=14888 word='strange'
+  10: logit=13.8125  id=17232 word='sharp'
+  11: logit=13.6875  id=99055 word='blurry'
+  12: logit=13.5625  id=9073  word='excellent'
+  13: logit=13.3750  id=13276 word='reasonable'
+  14: logit=13.3125  id=1632  word='well'
+  15: logit=13.3125  id=3265  word='close'
+  16: logit=12.6250  id=58425 word='unreasonable'
+  17: logit=12.6250  id=4363  word='likely'
+  18: logit=12.1250  id=14977 word='decent'
+  19: logit=12.0625  id=24416 word='unclear'
+  20: logit=12.0000  id=11    word=','
+----------------------------------------
+Image: midjourney_normal_190.jpg
+Top-10 logits:
+   1: logit=20.8750  id=1661  word='good'
+   2: logit=20.2500  id=7852  word='poor'
+   3: logit=17.7500  id=1550  word='high'
+   4: logit=16.1250  id=2797  word='clear'
+   5: logit=15.9375  id=3347  word='low'
+   6: logit=15.1250  id=14888  word='strange'
+   7: logit=14.3750  id=1632  word='well'
+   8: logit=14.3125  id=3873  word='bad'
+   9: logit=14.0625  id=13276  word='reasonable'
+  10: logit=13.9375  id=17232  word='sharp'
+  11: logit=13.1875  id=13382  word='accurate'
+  12: logit=12.8125  id=9073  word='excellent'
+  13: logit=12.6250  id=24438  word='rational'
+  14: logit=12.3750  id=4363  word='likely'
+  15: logit=12.3125  id=11521  word='creative'
+  16: logit=12.2500  id=1602  word='very'
+  17: logit=12.1875  id=3265  word='close'
+  18: logit=12.0000  id=99055  word='blurry'
+  19: logit=11.9375  id=14977  word='decent'
+  20: logit=11.9375  id=11  word=','
+----------------------------------------
+Image: midjourney_normal_198.jpg
+Top-10 logits:
+   1: logit=22.3750  id=1661  word='good'
+   2: logit=21.0000  id=7852  word='poor'
+   3: logit=18.1250  id=2797  word='clear'
+   4: logit=18.0000  id=1550  word='high'
+   5: logit=16.8750  id=3347  word='low'
+   6: logit=15.6250  id=3873  word='bad'
+   7: logit=15.1875  id=25489  word='realistic'
+   8: logit=14.8750  id=13382  word='accurate'
+   9: logit=14.5625  id=1632  word='well'
+  10: logit=14.3125  id=17232  word='sharp'
+  11: logit=14.1250  id=14888  word='strange'
+  12: logit=14.1250  id=9073  word='excellent'
+  13: logit=13.8125  id=99055  word='blurry'
+  14: logit=13.5625  id=4363  word='likely'
+  15: logit=13.1875  id=13276  word='reasonable'
+  16: logit=13.0000  id=3265  word='close'
+  17: logit=12.6250  id=11  word=','
+  18: logit=12.5625  id=21555  word='acceptable'
+  19: logit=12.5625  id=24416  word='unclear'
+  20: logit=12.3125  id=14977  word='decent'
